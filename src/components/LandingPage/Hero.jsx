@@ -68,14 +68,7 @@ export default function Hero() {
                     </h2>
                 </div>
             </section>
-            <section className="relative flex  items-center justify-center overflow-hidden bg-[#0B0715]">
-
-                {/* Background */}
-                <div className="absolute inset-0">
-                    <div className="absolute left-0 top-0 h-full w-[600px] bg-violet-700/20 blur-[180px]" />
-                    <div className="absolute right-0 top-0 h-full w-[600px] bg-pink-600/15 blur-[180px]" />
-                    <div className="absolute inset-0 bg-gradient-to-r from-violet-950/40 via-transparent to-pink-950/30" />
-                </div>
+            <section className="relative flex  items-center justify-center overflow-hidden bg-linear-to-b from-[#161327] to-[#2b0f26]">
 
                 <div className=" relative z-10 flex text-center w-full h-full flex-col justify-center px-6 md:px-16 lg:px-20">
                     <p className="uppercase md:hidden tracking-[0.1em] py-4 text-sm md:text-md text-[#b99160] font-semibold mb-2">
