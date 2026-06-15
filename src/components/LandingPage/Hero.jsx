@@ -1,6 +1,35 @@
 'use client';
 
 import Navbar from './Navber';
+import {
+    Users,
+    BookOpen,
+    Star,
+    Sparkles
+} from "lucide-react";
+
+const stats = [
+    {
+        icon: Users,
+        value: "50+",
+        label: "Women Entrepreneurs",
+    },
+    {
+        icon: BookOpen,
+        value: "2",
+        label: "Volumes Published",
+    },
+    {
+        icon: Star,
+        value: "25",
+        label: "Stories Per Volume",
+    },
+    {
+        icon: Sparkles,
+        value: "∞",
+        label: "Inspiration",
+    },
+];
 
 export default function Hero() {
     return (
@@ -48,121 +77,130 @@ export default function Hero() {
                     <div className="absolute inset-0 bg-gradient-to-r from-violet-950/40 via-transparent to-pink-950/30" />
                 </div>
 
-                <div className=" relative md:hidden z-10 flex text-center w-full h-full flex-col justify-center px-6 md:px-16 lg:px-20">
-                    <p className="uppercase tracking-[0.1em] py-4 text-sm md:text-md text-[#b99160] font-semibold mb-2">
+                <div className=" relative z-10 flex text-center w-full h-full flex-col justify-center px-6 md:px-16 lg:px-20">
+                    <p className="uppercase md:hidden tracking-[0.1em] py-4 text-sm md:text-md text-[#b99160] font-semibold mb-2">
                         BILLENNIUM DIVAS FUND PRESENTS
                     </p>
 
-                    <h1 className="font-bold uppercase tracking-[-0.04em] leading-[0.95] text-white text-[42px] md:text-[60px] lg:text-[80px]">
+                    <h1 className="font-bold md:hidden uppercase tracking-[-0.04em] leading-[0.95] text-white text-[42px] md:text-[60px] lg:text-[80px]">
                         EVES AGAINST
                     </h1>
 
-                    <h1 className="font-bold mb-3 uppercase tracking-[-0.04em] leading-[0.95] text-[42px] md:text-[60px] lg:text-[80px] bg-[linear-gradient(180deg,#ff9df2_0%,#ff5cd6_40%,#ff2cb8_70%,#c61fff_100%)] bg-clip-text text-transparent">
+                    <h1 className="font-bold mb-3 md:hidden uppercase tracking-[-0.04em] leading-[0.95] text-[42px] md:text-[60px] lg:text-[80px] bg-[linear-gradient(180deg,#ff9df2_0%,#ff5cd6_40%,#ff2cb8_70%,#c61fff_100%)] bg-clip-text text-transparent">
                         THE ODDS
                     </h1>
 
-                    <h2 className=" max-w-[750px] mb-6 text-[16px] md:text-[20px] lg:text-[26px] font-serif italic font-medium leading-relaxed text-[#E8DDF6]">
+                    <h2 className=" max-w-[750px] md:hidden mb-6 text-[16px] md:text-[20px] lg:text-[26px] font-serif italic font-medium leading-relaxed text-[#E8DDF6]">
                         Celebrating <br /> <span className="text-[#b99160]">25 Inspiring Women Entrepreneurs</span>
                         <br />
                         Who Turned Barriers Into Breakthroughs
                     </h2>
 
-                    <section className="relative w-full py-10">
-                        <div className="max-w-7xl mx-auto px-6">
-                            <div className="grid grid-cols-2 md:grid-cols-4">
+                    <section className="relative py-10 overflow-hidden ">
 
-                                {/* Item 1 */}
-                                <div className="flex flex-col items-center text-center border-r border-white/10">
-                                    <svg
-                                        className="w-5 h-5 mb-4 text-white/60"
-                                        fill="none"
-                                        stroke="currentColor"
-                                        viewBox="0 0 24 24"
-                                    >
-                                        <path
-                                            strokeLinecap="round"
-                                            strokeLinejoin="round"
-                                            strokeWidth={1.5}
-                                            d="M16 14a4 4 0 10-8 0m8 0v1a2 2 0 002 2h1m-3-3a4 4 0 01-8 0m8 0H8"
-                                        />
-                                    </svg>
+                        <div className="max-w-7xl mx-auto px-5 sm:px-6 lg:px-8">
+                            <div className="grid grid-cols-2 lg:grid-cols-4 border border-white/10 rounded-3xl overflow-hidden backdrop-blur-sm">
 
-                                    <h3 className="text-white text-6xl font-serif font-bold">50+</h3>
+                                {stats.map((item, index) => {
+                                    const Icon = item.icon;
 
-                                    <p className="mt-2 text-[12px] tracking-[0.25em] uppercase text-white/50">
-                                        Women Entrepreneurs
-                                    </p>
-                                </div>
+                                    return (
+                                        <div
+                                            key={index}
+                                            className="
+                                    group
+                                    relative
+                                    flex
+                                    flex-col
+                                    items-center
+                                    justify-center
+                                    text-center
+                                    px-6
+                                    py-10
+                                    md:py-14
+                                    border-b
+                                    lg:border-b-0
+                                    border-white/10
+                                    transition-all
+                                    duration-500
+                                    hover:bg-white/[0.02]
+                                "
+                                        >
+                                            {/* Vertical Borders */}
+                                            {index !== stats.length - 1 && (
+                                                <div className="hidden lg:block absolute top-0 right-0 h-full w-px bg-white/10" />
+                                            )}
 
-                                {/* Item 2 */}
-                                <div className="flex flex-col items-center text-center border-r border-white/10">
-                                    <svg
-                                        className="w-5 h-5 mb-4 text-white/60"
-                                        fill="none"
-                                        stroke="currentColor"
-                                        viewBox="0 0 24 24"
-                                    >
-                                        <path
-                                            strokeLinecap="round"
-                                            strokeLinejoin="round"
-                                            strokeWidth={1.5}
-                                            d="M12 6v12m0-12c-1.5-1-3.5-1.5-6-1.5v12c2.5 0 4.5.5 6 1.5m0-12c1.5-1 3.5-1.5 6-1.5v12c-2.5 0-4.5.5-6 1.5"
-                                        />
-                                    </svg>
+                                            {/* Icon Glow */}
+                                            <div
+                                                className="
+                                        relative
+                                        mb-5
+                                        transition-all
+                                        duration-500
+                                        group-hover:scale-110
+                                    "
+                                            >
+                                                <div className="absolute inset-0 bg-white/10 blur-xl rounded-full" />
 
-                                    <h3 className="text-white text-6xl font-serif font-bold">2</h3>
+                                                <div
+                                                    className="
+                                            relative
+                                            w-12
+                                            h-12
+                                            flex
+                                            items-center
+                                            justify-center
+                                            rounded-full
+                                            border
+                                            border-white/10
+                                            bg-white/[0.03]
+                                        "
+                                                >
+                                                    <Icon
+                                                        size={22}
+                                                        className="text-white/70"
+                                                        strokeWidth={1.5}
+                                                    />
+                                                </div>
+                                            </div>
 
-                                    <p className="mt-2 text-[12px] tracking-[0.25em] uppercase text-white/50">
-                                        Volumes Published
-                                    </p>
-                                </div>
+                                            {/* Number */}
+                                            <h3
+                                                className="
+                                        text-white
+                                        text-4xl
+                                        sm:text-5xl
+                                        md:text-6xl
+                                        font-serif
+                                        font-bold
+                                        leading-none
+                                        tracking-tight
+                                        transition-transform
+                                        duration-500
+                                        group-hover:scale-105
+                                    "
+                                            >
+                                                {item.value}
+                                            </h3>
 
-                                {/* Item 3 */}
-                                <div className="flex flex-col items-center text-center border-r border-white/10">
-                                    <svg
-                                        className="w-5 h-5 mb-4 text-white/60"
-                                        fill="none"
-                                        stroke="currentColor"
-                                        viewBox="0 0 24 24"
-                                    >
-                                        <path
-                                            strokeLinecap="round"
-                                            strokeLinejoin="round"
-                                            strokeWidth={1.5}
-                                            d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.05 3.232a1 1 0 00.95.69h3.398c.969 0 1.371 1.24.588 1.81l-2.75 1.998a1 1 0 00-.364 1.118l1.05 3.232c.3.922-.755 1.688-1.539 1.118l-2.75-1.998a1 1 0 00-1.176 0l-2.75 1.998c-.783.57-1.838-.196-1.539-1.118l1.05-3.232a1 1 0 00-.364-1.118L2.114 8.659c-.783-.57-.38-1.81.588-1.81H6.1a1 1 0 00.95-.69l1.05-3.232z"
-                                        />
-                                    </svg>
-
-                                    <h3 className="text-white text-6xl font-serif font-bold">25</h3>
-
-                                    <p className="mt-2 text-[12px] tracking-[0.25em] uppercase text-white/50">
-                                        Stories Per Volume
-                                    </p>
-                                </div>
-
-                                {/* Item 4 */}
-                                <div className="flex flex-col items-center text-center">
-                                    <svg
-                                        className="w-5 h-5 mb-4 text-white/60"
-                                        fill="none"
-                                        stroke="currentColor"
-                                        viewBox="0 0 24 24"
-                                    >
-                                        <path
-                                            strokeLinecap="round"
-                                            strokeLinejoin="round"
-                                            strokeWidth={1.5}
-                                            d="M12 3l1.5 4.5L18 9l-4.5 1.5L12 15l-1.5-4.5L6 9l4.5-1.5L12 3z"
-                                        />
-                                    </svg>
-
-                                    <h3 className="text-white text-6xl font-serif font-bold">∞</h3>
-
-                                    <p className="mt-2 text-[12px] tracking-[0.25em] uppercase text-white/50">
-                                        Inspiration
-                                    </p>
-                                </div>
-
+                                            {/* Label */}
+                                            <p
+                                                className="
+                                        mt-3
+                                        text-[10px]
+                                        sm:text-xs
+                                        tracking-[0.25em]
+                                        uppercase
+                                        text-white/50
+                                        leading-relaxed
+                                    "
+                                            >
+                                                {item.label}
+                                            </p>
+                                        </div>
+                                    );
+                                })}
                             </div>
                         </div>
                     </section>
