@@ -11,8 +11,8 @@ import {
 const stats = [
     {
         icon: Users,
-        value: "50+",
-        label: "Women Entrepreneurs",
+        value: "50",
+        label: "Women Entrepreneurs Stories",
     },
     {
         icon: BookOpen,
@@ -26,7 +26,7 @@ const stats = [
     },
     {
         icon: Sparkles,
-        value: "∞",
+        value: "\u221e",
         label: "Inspiration",
     },
 ];

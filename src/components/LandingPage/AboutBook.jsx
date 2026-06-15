@@ -1,12 +1,16 @@
 "use client";
 
 import Image from "next/image";
+import { useState } from "react";
 import {
     BookOpen,
     Users,
     Star,
     ArrowRight,
 } from "lucide-react";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Autoplay } from "swiper/modules";
+import "swiper/css";
 
 const highlights = [
     {
@@ -26,7 +30,21 @@ const highlights = [
     },
 ];
 
+const purchasePlatforms = [
+    { name: "Notion Press", icon: "📚", links: { vol1: "https://bit.ly/NPeato", vol2: "https://bit.ly/NPeatoII" } },
+    { name: "Flipkart", icon: "🛒", links: { vol1: "https://bit.ly/FKeato", vol2: "https://bit.ly/FKeatoII" } },
+    { name: "Amazon", icon: "🔵", links: { vol1: "https://amzn.to/3bd90k9", vol2: "https://amzn.to/3pgBNr6" } },
+    { name: "Amazon Kindle", icon: "📱", links: { vol1: "https://amzn.to/3rzUgPS", vol2: "https://amzn.to/3CXAFAS" } },
+    { name: "Apple EBooks", icon: "🍎", links: { vol1: "https://apple.co/3g16z2H", vol2: "https://apple.co/3ejmps7" } },
+    { name: "Google Play", icon: "▶️", links: { vol1: "https://bit.ly/Goeato", vol2: "https://bit.ly/GPeatoII" } },
+    { name: "Booktopia", icon: "🌏", links: { vol1: "https://bit.ly/BTeato", vol2: "https://bit.ly/BAeatoII" } },
+    { name: "Rakuten Kobo", icon: "📖", links: { vol1: "https://bit.ly/RKeato", vol2: "https://bit.ly/RKeatoII" } },
+];
+
 export default function AboutBook() {
+    const [swiperInstance, setSwiperInstance] = useState(null);
+    const [isHovering, setIsHovering] = useState(false);
+
     return (<section className="relative overflow-hidden bg-[#08070d] py-24 md:py-32">
         {/* Background Effects */}
         <div className="absolute inset-0 overflow-hidden">
@@ -62,7 +80,8 @@ export default function AboutBook() {
                                 height={700}
                                 priority
                                 className="
-                                rounded-2xl
+                                    h-auto
+                                    rounded-2xl
                                     object-contain
                                     drop-shadow-[0_30px_80px_rgba(0,0,0,0.6)]
                                 "

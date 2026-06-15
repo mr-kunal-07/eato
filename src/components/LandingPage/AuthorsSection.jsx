@@ -56,7 +56,7 @@ const authors = [
 
 export default function AuthorsSection() {
     return (
-        <section className="relative overflow-hidden bg-gradient-to-b from-[#08070d] via-[#0d0c13] to-[#08070d] py-24 md:py-32">
+        <section id="authors" className="relative scroll-mt-24 overflow-hidden bg-gradient-to-b from-[#08070d] via-[#0d0c13] to-[#08070d] py-24 md:py-32">
             {/* Background Glow Effects */}
             <div className="absolute inset-0 overflow-hidden">
                 <div className="absolute left-0 top-0 h-[500px] w-[500px] rounded-full bg-pink-500/10 blur-[150px]" />
@@ -71,9 +71,9 @@ export default function AuthorsSection() {
                     </span>
 
                     <h2 className="mt-5 font-serif text-4xl leading-tight text-white md:text-6xl">
-                        Meet The Minds Behind
+                        The Minds Behind
                         <span className="block bg-gradient-to-r from-pink-300 via-purple-300 to-pink-300 bg-clip-text text-transparent">
-                            Empowering Women Entrepreneurs
+                            Eves Against The Odds
                         </span>
                     </h2>
 
@@ -176,7 +176,7 @@ export default function AuthorsSection() {
                                     </p>
 
                                     <p className="mt-3 font-serif text-xl italic text-white">
-                                        "{author.quote}"
+                                        &quot;{author.quote}&quot;
                                     </p>
                                 </div>
 

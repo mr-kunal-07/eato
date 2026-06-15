@@ -3,6 +3,7 @@
 import Link from "next/link";
 import {
     FaLinkedin,
+    FaFacebook,
     FaEnvelope,
     FaGlobe,
     FaArrowUp,
@@ -43,33 +44,7 @@ export default function Footer() {
                         and entrepreneurial excellence.
                     </p>
 
-                    <button
-                        onClick={scrollToTop}
-                        className="
-                            mt-10
-                            inline-flex
-                            items-center
-                            gap-3
-                            rounded-full
-                            border
-                            border-pink-400/20
-                            bg-pink-500/10
-                            px-7
-                            py-4
-                            text-sm
-                            uppercase
-                            tracking-[0.2em]
-                            text-pink-300
-                            transition-all
-                            duration-300
-                            hover:border-pink-400/40
-                            hover:bg-pink-500/20
-                            cursor-pointer
-                        "
-                    >
-                        Back To Top
-                        <FaArrowUp />
-                    </button>
+
                 </div>
 
                 {/* Main Footer */}
@@ -141,87 +116,57 @@ export default function Footer() {
                         </ul>
                     </div>
 
-                    {/* Author 1 */}
+                    {/* Follow Us */}
                     <div>
                         <h4 className="text-lg font-semibold text-white">
-                            Bhavesh Kothari
+                            Follow Us
                         </h4>
 
-                        <p className="mt-4 text-sm text-white/50">
-                            Director, Billennium Divas
-                        </p>
-
-                        <div className="mt-6 flex gap-4">
+                        <div className="mt-6 space-y-4">
                             <a
-                                href="https://www.linkedin.com/in/bhaveshkothari1511"
+                                href="https://www.linkedin.com/company/evesagainsttheodds/"
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                className="text-white/60 hover:text-pink-300"
+                                className="
+                                    flex
+                                    items-center
+                                    gap-3
+                                    text-white/60
+                                    transition-colors
+                                    duration-300
+                                    hover:text-pink-300
+                                "
                             >
                                 <FaLinkedin size={20} />
+                                <span>LinkedIn</span>
                             </a>
 
                             <a
-                                href="https://www.billenniumdivas.fund"
+                                href="https://www.facebook.com/evesagainsttheodds"
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                className="text-white/60 hover:text-pink-300"
+                                className="
+                                    flex
+                                    items-center
+                                    gap-3
+                                    text-white/60
+                                    transition-colors
+                                    duration-300
+                                    hover:text-pink-300
+                                "
                             >
-                                <FaGlobe size={20} />
-                            </a>
-
-                            <a
-                                href="mailto:billenniumdivas@gmail.com"
-                                className="text-white/60 hover:text-pink-300"
-                            >
-                                <FaEnvelope size={20} />
+                                <FaFacebook size={20} />
+                                <span>Facebook</span>
                             </a>
                         </div>
                     </div>
 
-                    {/* Author 2 */}
-                    <div>
-                        <h4 className="text-lg font-semibold text-white">
-                            Hariharan Iyer
-                        </h4>
-
-                        <p className="mt-4 text-sm text-white/50">
-                            Speaker, Trainer & Author
-                        </p>
-
-                        <div className="mt-6 flex gap-4">
-                            <a
-                                href="https://www.linkedin.com/in/hariharan-iyer-the-enter-trainer-54456516"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className="text-white/60 hover:text-pink-300"
-                            >
-                                <FaLinkedin size={20} />
-                            </a>
-
-                            <a
-                                href="https://www.thehsse.com"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className="text-white/60 hover:text-pink-300"
-                            >
-                                <FaGlobe size={20} />
-                            </a>
-
-                            <a
-                                href="mailto:hariharan@thehsse.com"
-                                className="text-white/60 hover:text-pink-300"
-                            >
-                                <FaEnvelope size={20} />
-                            </a>
-                        </div>
-                    </div>
                 </div>
 
                 {/* Bottom Bar */}
                 <div className="flex flex-col items-center justify-between gap-4 border-t border-white/10 py-8 text-center md:flex-row">
                     <p className="text-sm text-white/40">
-                        © 2026 Eves Against The Odds. All Rights Reserved.
+                        © 2026 Billennium Divas Pvt. Ltd. All Rights Reserved.
                     </p>
 
                     <p className="text-sm text-white/40">

@@ -48,8 +48,8 @@ export default function Testimonials() {
         <section className="relative overflow-hidden bg-[#08070d] py-24">
             {/* Background Glow */}
             <div className="absolute inset-0">
-                <div className="absolute left-0 top-0 h-[400px] w-[400px] rounded-full bg-pink-500/10 blur-[120px]" />
-                <div className="absolute right-0 bottom-0 h-[400px] w-[400px] rounded-full bg-purple-500/10 blur-[120px]" />
+                <div className="absolute left-0 top-0 h-100 w-100 rounded-full bg-pink-500/10 blur-[120px]" />
+                <div className="absolute right-0 bottom-0 h-100 w-100 rounded-full bg-purple-500/10 blur-[120px]" />
             </div>
 
             <div className="relative z-10 mx-auto max-w-7xl px-6">
@@ -61,7 +61,7 @@ export default function Testimonials() {
 
                     <h2 className="mt-4 font-serif text-4xl text-white md:text-6xl">
                         Voices Of
-                        <span className="block bg-gradient-to-r from-pink-300 via-purple-300 to-pink-300 bg-clip-text text-transparent">
+                        <span className="block bg-linear-to-r from-pink-300 via-purple-300 to-pink-300 bg-clip-text text-transparent">
                             Inspiration & Impact
                         </span>
                     </h2>
@@ -100,21 +100,21 @@ export default function Testimonials() {
                                 <div
                                     className="
                                         h-full
-                                        rounded-[32px]
+                                        rounded-4xl
                                         border
                                         border-white/10
-                                        bg-white/[0.04]
+                                        bg-white/4
                                         p-8
                                         backdrop-blur-xl
                                         transition-all
                                         duration-500
                                         hover:-translate-y-2
                                         hover:border-pink-400/30
-                                        hover:bg-white/[0.06]
+                                        hover:bg-white/6
                                     "
                                 >
                                     <div className="text-6xl leading-none text-pink-300">
-                                        "
+                                        &quot;
                                     </div>
 
                                     <p className="mt-4 text-lg leading-relaxed text-white/75">

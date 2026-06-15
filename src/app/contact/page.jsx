@@ -33,10 +33,10 @@ export default function ContactSection() {
 
             {/* Background Glow */}
             <div className="absolute inset-0 overflow-hidden">
-                <div className="absolute left-0 top-0 h-[500px] w-[500px] rounded-full bg-pink-500/10 blur-[150px]" />
-                <div className="absolute right-0 bottom-0 h-[500px] w-[500px] rounded-full bg-violet-500/10 blur-[150px]" />
+                <div className="absolute left-0 top-0 h-100 w-100 rounded-full bg-pink-500/10 blur-[150px]" />
+                <div className="absolute right-0 bottom-0 h-100 w-100 rounded-full bg-violet-500/10 blur-[150px]" />
             </div>
-            
+
 
             <div className="relative z-10 mx-auto max-w-7xl px-6">
                 <div className="grid items-center gap-16 lg:grid-cols-2">
@@ -46,33 +46,32 @@ export default function ContactSection() {
                             Share Your Journey
                         </span>
 
-                        <h2 className="mt-5 font-serif text-4xl leading-tight text-white md:text-6xl">
+                        <h2 className="mt-5 font-serif text-4xl leading-tight text-white md:text-5xl">
                             Get Featured In
-                            <span className="block bg-gradient-to-r from-pink-300 via-purple-300 to-pink-300 bg-clip-text text-transparent">
-                                Our Next Book
+                            <span className="block bg-linear-to-r from-pink-300 via-purple-300 to-pink-300 bg-clip-text text-transparent">
+                                Upcomming Edition Of
                             </span>
+                            Eves Against The Odds
                         </h2>
 
                         <p className="mt-8 text-lg leading-relaxed text-white/60">
-                            Are you a woman entrepreneur who has overcome
-                            challenges, broken barriers, and created impact?
-                            We'd love to hear your inspiring story.
+                            No story lives unless someone wants to listen. The stories we love best do live in us forever.&quot; &ldquo;Those who tell stories rule the world.
                         </p>
 
                         <div className="mt-10 space-y-6">
-                            <div className="rounded-3xl border border-white/10 bg-white/[0.03] p-6">
+                            <div className="rounded-3xl border border-white/10 bg-white/3 p-6">
                                 <h4 className="text-lg font-semibold text-white">
                                     Who Can Apply?
                                 </h4>
 
                                 <p className="mt-3 text-white/60">
-                                    Founders, business leaders, startup
+                                    Women Founders, business leaders, startup
                                     entrepreneurs, social innovators, and
                                     women creating meaningful impact.
                                 </p>
                             </div>
 
-                            <div className="rounded-3xl border border-white/10 bg-white/[0.03] p-6">
+                            <div className="rounded-3xl border border-white/10 bg-white/3 p-6">
                                 <h4 className="text-lg font-semibold text-white">
                                     What We Look For
                                 </h4>
@@ -92,7 +91,7 @@ export default function ContactSection() {
                             rounded-[36px]
                             border
                             border-white/10
-                            bg-white/[0.04]
+                            bg-white/3  
                             p-8
                             backdrop-blur-xl
                             md:p-10
@@ -245,7 +244,7 @@ export default function ContactSection() {
                             {/* Why Feature */}
                             <div>
                                 <label className="mb-3 block text-sm text-white/70">
-                                    Why Should We Feature You In Our Next Book?
+                                    Why Should We Feature You In Our Next Edition?
                                 </label>
 
                                 <textarea
@@ -269,24 +268,29 @@ export default function ContactSection() {
                             {/* Submit */}
                             <button
                                 type="submit"
-                                className="
-                                    w-full
-                                    rounded-2xl
-                                    bg-gradient-to-r
-                                    from-violet-500/70
-                                    to-purple-500/20
-                                    px-8
-                                    py-4
-                                    font-medium
-                                    text-white
-                                    transition-all
-                                    duration-300
-                                    hover:scale-[1.02]
-                                "
+                                className="w-full rounded-2xl bg-linear-to-r from-violet-500/70 to-purple-500/20 px-8 py-4 font-medium text-white transition-all duration-300 hover:scale-[1.02]"
                             >
-                                Submit Your Story
+                                Submit Your Intrest
                             </button>
                         </form>
+
+                        {/* Disclaimer */}
+                        <div className="mt-8 border-t border-white/10 pt-6">
+                            <p className="text-xs leading-relaxed text-white/50">
+                                <span className="block mb-3 font-semibold text-white/70">
+                                    &#10022; Disclaimer
+                                </span>
+                                We reserve the right to select or reject applications at our sole discretion. All Rights Reserved by Billennium Divas Pvt. Ltd. &apos;No Plagiarism&apos;.
+                                <br />
+                                <br />
+                                In case you are shortlisted by us for publishing your inspiring journey, we will share the next steps with you and the applicable terms & conditions (T&C).
+                                <br />
+                                <br />
+                                <span className="font-semibold text-pink-300">
+                                    (KINDLY NOTE: We &apos;DO NOT&apos; charge any fees whatsoever to publish your story in our book).
+                                </span>
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>

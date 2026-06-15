@@ -2,7 +2,6 @@
 
 import Image from "next/image";
 import { Quote } from "lucide-react";
-import { LiaLinkedin } from "react-icons/lia";
 
 const items = [
     {
@@ -85,19 +84,7 @@ export default function WomenStoriesGrid() {
                     {items.map((item, index) => (
                         <div
                             key={index}
-                            className="
-                group
-                rounded-[28px]
-                overflow-hidden
-                border
-                border-white/10
-                bg-white/[0.03]
-                backdrop-blur-xl
-                hover:border-pink-400/20
-                transition-all
-                duration-500
-                hover:-translate-y-2
-              "
+                            className="group rounded-[28px] overflow-hidden border border-white/10 bg-white/4 backdrop-blur-xl hover:border-pink-400/20 transition-all duration-500 hover:-translate-y-2"
                         >
                             {item.type === "woman" ? (
                                 <>
@@ -108,17 +95,10 @@ export default function WomenStoriesGrid() {
                                             alt={item.name}
                                             width={600}
                                             height={700}
-                                            className="
-                        h-[340px]
-                        w-full
-                        object-cover
-                        transition-transform
-                        duration-700
-                        group-hover:scale-105
-                      "
+                                            className="h-85 w-full object-cover transition-transform duration-700 group-hover:scale-105"
                                         />
 
-                                        <div className="absolute inset-0 bg-gradient-to-t from-[#08070d] via-transparent to-transparent" />
+                                        <div className="absolute inset-0 bg-linear-to-t from-[#08070d] via-transparent to-transparent" />
 
                                     </div>
 
@@ -148,16 +128,8 @@ export default function WomenStoriesGrid() {
                                         />
                                     </div>
 
-                                    <p
-                                        className="
-                      text-white
-                      text-2xl
-                      md:text-3xl
-                      font-serif
-                      leading-relaxed
-                    "
-                                    >
-                                        "{item.quote}"
+                                    <p className=" text-white text-2xl md:text-3xl font-serif leading-relaxed">
+                                        &quot;{item.quote}&quot;
                                     </p>
 
                                     <div className="mt-8 h-px w-20 bg-pink-400/40" />
