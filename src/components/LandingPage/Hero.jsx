@@ -51,7 +51,7 @@ export default function Hero() {
                 {/* Content Overlay */}
                 <div className="relative z-10 hidden md:flex w-full h-full flex-col justify-center px-6 md:px-16 lg:px-20">
                     <p className="uppercase tracking-[0.2em] text-sm md:text-md text-[#b99160] font-semibold mb-2">
-                        BILLENNIUM DIVAS FUND PRESENTS
+                        BILLENNIUM DIVAS PRESENTS
                     </p>
 
                     <h1 className="font-bold uppercase tracking-[-0.04em] leading-[0.95] text-white text-[42px] md:text-[60px] lg:text-[80px]">
@@ -62,7 +62,7 @@ export default function Hero() {
                         THE ODDS
                     </h1>
                     <h2 className="mt-3 max-w-[750px] text-left text-[16px] md:text-[20px] lg:text-[26px] font-serif italic font-medium leading-relaxed text-[#E8DDF6]">
-                        Celebrating <span className="text-[#b99160]">25 Inspiring Women Entrepreneurs</span>
+                        Celebrating <span className="text-[#b99160]">25 Inspiring Women Entrepreneurs Stories</span>
                         <br />
                         Who Turned Barriers Into Breakthroughs
                     </h2>
@@ -79,7 +79,7 @@ export default function Hero() {
 
                 <div className=" relative z-10 flex text-center w-full h-full flex-col justify-center px-6 md:px-16 lg:px-20">
                     <p className="uppercase md:hidden tracking-[0.1em] py-4 text-sm md:text-md text-[#b99160] font-semibold mb-2">
-                        BILLENNIUM DIVAS FUND PRESENTS
+                        BILLENNIUM DIVAS PRESENTS
                     </p>
 
                     <h1 className="font-bold md:hidden uppercase tracking-[-0.04em] leading-[0.95] text-white text-[42px] md:text-[60px] lg:text-[80px]">
@@ -91,15 +91,15 @@ export default function Hero() {
                     </h1>
 
                     <h2 className=" max-w-[750px] md:hidden mb-6 text-[16px] md:text-[20px] lg:text-[26px] font-serif italic font-medium leading-relaxed text-[#E8DDF6]">
-                        Celebrating <br /> <span className="text-[#b99160]">25 Inspiring Women Entrepreneurs</span>
+                        Celebrating <br /> <span className="text-[#b99160]">25 Inspiring Women Entrepreneurs Stories</span>
                         <br />
                         Who Turned Barriers Into Breakthroughs
                     </h2>
 
-                    <section className="relative py-10 overflow-hidden ">
+                    <section className="relative py-8 overflow-hidden ">
 
                         <div className="max-w-7xl mx-auto px-5 sm:px-6 lg:px-8">
-                            <div className="grid grid-cols-2 lg:grid-cols-4 border border-white/10 rounded-3xl overflow-hidden backdrop-blur-sm">
+                            <div className="grid grid-cols-2 lg:grid-cols-4 border border-white/10 rounded-2xl overflow-hidden backdrop-blur-sm">
 
                                 {stats.map((item, index) => {
                                     const Icon = item.icon;
@@ -169,9 +169,9 @@ export default function Hero() {
                                             <h3
                                                 className="
                                         text-white
-                                        text-4xl
-                                        sm:text-5xl
-                                        md:text-6xl
+                                        text-3xl
+                                        sm:text-4xl
+                                        md:text-5xl
                                         font-serif
                                         font-bold
                                         leading-none
