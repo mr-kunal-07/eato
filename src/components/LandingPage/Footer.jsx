@@ -158,6 +158,36 @@ export default function Footer() {
                                 <FaFacebook size={20} />
                                 <span>Facebook</span>
                             </a>
+
+                        </div>
+                        <div className="mt-10">
+                            <a
+                                href="https://billenniumdivas.vercel.app/"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="
+            inline-flex
+            items-center
+            gap-3
+            rounded-md
+            bg-gradient-to-r
+            from-pink-500/70
+            to-purple-500/40
+            px-4
+            py-4
+            text-md
+            font-semibold
+            text-white
+            shadow-lg
+            shadow-pink-500/20
+            transition-all
+            duration-300
+            hover:scale-105
+            hover:shadow-pink-500/40
+        "
+                            >
+                                More About Billennium Divas
+                            </a>
                         </div>
                     </div>
 
@@ -172,6 +202,7 @@ export default function Footer() {
                     <p className="text-sm text-white/40">
                         Designed with passion for inspiring women entrepreneurs.
                     </p>
+
                 </div>
             </div>
         </footer>
