@@ -1,16 +1,15 @@
 "use client";
 
 import Image from "next/image";
-import { useState } from "react";
 import {
     BookOpen,
     Users,
     Star,
     ArrowRight,
+    FlipHorizontal,
 } from "lucide-react";
-import { Swiper, SwiperSlide } from "swiper/react";
-import { Autoplay } from "swiper/modules";
-import "swiper/css";
+import { BsAmazon, BsGooglePlay } from "react-icons/bs";
+import { GiEvilBook } from "react-icons/gi";
 
 const highlights = [
     {
@@ -30,20 +29,7 @@ const highlights = [
     },
 ];
 
-const purchasePlatforms = [
-    { name: "Notion Press", icon: "📚", links: { vol1: "https://bit.ly/NPeato", vol2: "https://bit.ly/NPeatoII" } },
-    { name: "Flipkart", icon: "🛒", links: { vol1: "https://bit.ly/FKeato", vol2: "https://bit.ly/FKeatoII" } },
-    { name: "Amazon", icon: "🔵", links: { vol1: "https://amzn.to/3bd90k9", vol2: "https://amzn.to/3pgBNr6" } },
-    { name: "Amazon Kindle", icon: "📱", links: { vol1: "https://amzn.to/3rzUgPS", vol2: "https://amzn.to/3CXAFAS" } },
-    { name: "Apple EBooks", icon: "🍎", links: { vol1: "https://apple.co/3g16z2H", vol2: "https://apple.co/3ejmps7" } },
-    { name: "Google Play", icon: "▶️", links: { vol1: "https://bit.ly/Goeato", vol2: "https://bit.ly/GPeatoII" } },
-    { name: "Booktopia", icon: "🌏", links: { vol1: "https://bit.ly/BTeato", vol2: "https://bit.ly/BAeatoII" } },
-    { name: "Rakuten Kobo", icon: "📖", links: { vol1: "https://bit.ly/RKeato", vol2: "https://bit.ly/RKeatoII" } },
-];
-
 export default function AboutBook() {
-    const [swiperInstance, setSwiperInstance] = useState(null);
-    const [isHovering, setIsHovering] = useState(false);
 
     return (<section className="relative overflow-hidden bg-[#08070d] py-24 md:py-32">
         {/* Background Effects */}
@@ -298,6 +284,116 @@ export default function AboutBook() {
                     </div>
                 </div>
 
+            </div>
+        </div>
+
+        {/* Available Worldwide */}
+        <div className="relative mt-24">
+            {/* Divider */}
+            <div className="mb-10 flex items-center gap-4">
+                <div className="h-px flex-1 bg-gradient-to-r from-transparent to-white/10" />
+                <span className="text-xs uppercase tracking-[0.35em] text-white/40">
+                    Available Worldwide
+                </span>
+                <div className="h-px flex-1 bg-gradient-to-l from-transparent to-white/10" />
+            </div>
+
+            <div className="mx-auto max-w-5xl rounded-[32px] border border-white/10 bg-white/[0.03] p-8 backdrop-blur-xl">
+                <div className="flex flex-wrap items-center justify-center gap-6">
+                    {[
+                        {
+                            name: "Amazon",
+                            icon: BsAmazon,
+                        },
+                        {
+                            name: "Flipkart",
+                            icon: FlipHorizontal,
+                        },
+                        {
+                            name: "Apple Books",
+                            icon: GiEvilBook,
+                        },
+                        {
+                            name: "Google Play",
+                            icon: BsGooglePlay,
+                        },
+                    ].map((store) => {
+                        const Icon = store.icon;
+
+                        return (
+                            <a
+                                key={store.name}
+                                href="#"
+                                className="
+                            group
+                            relative
+                            overflow-hidden
+                            rounded-3xl
+                            border
+                            border-white/10
+                            bg-white/[0.02]
+                            px-8
+                            py-6
+                            transition-all
+                            duration-500
+                            hover:-translate-y-2
+                            hover:border-pink-400/30
+                            hover:bg-white/[0.05]
+                        "
+                            >
+                                {/* Glow */}
+                                <div
+                                    className="
+                                absolute
+                                inset-0
+                                opacity-0
+                                transition-opacity
+                                duration-500
+                                group-hover:opacity-100
+                                bg-gradient-to-br
+                                from-pink-500/10
+                                to-violet-500/10
+                            "
+                                />
+
+                                <div className="relative flex flex-col items-center gap-4">
+                                    <div
+                                        className="
+                                    flex
+                                    h-16
+                                    w-16
+                                    items-center
+                                    justify-center
+                                    rounded-2xl
+                                    bg-gradient-to-br
+                                    from-pink-500/15
+                                    to-violet-500/15
+                                "
+                                    >
+                                        <Icon
+                                            size={30}
+                                            className="
+                                        text-pink-300
+                                        transition-all
+                                        duration-500
+                                        group-hover:scale-110
+                                    "
+                                        />
+                                    </div>
+
+                                    <span className="text-sm font-medium text-white/80">
+                                        {store.name}
+                                    </span>
+                                </div>
+                            </a>
+                        );
+                    })}
+                </div>
+
+                {/* Bottom Text */}
+                <p className="mt-8 text-center text-sm text-white/50">
+                    Available in print, digital, and audiobook formats across major platforms.
+                </p>
             </div>
         </div>
     </section>

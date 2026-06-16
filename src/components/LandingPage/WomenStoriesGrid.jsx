@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import { Quote } from "lucide-react";
+import Link from "next/link";
 
 const items = [
     {
@@ -139,6 +140,21 @@ export default function WomenStoriesGrid() {
                         </div>
                     ))}
 
+                </div>
+                {/* Explore More Button */}
+                <div className="mt-16 flex justify-center">
+                    <Link
+                        href="/stories"
+                        className="group inline-flex items-center gap-3 rounded-full border border-pink-400/30 bg-white/5 px-8 py-4 text-white backdrop-blur-md transition-all duration-300 hover:border-pink-300 hover:bg-pink-500/10 hover:shadow-[0_0_30px_rgba(236,72,153,0.25)]"
+                    >
+                        <span className="font-medium tracking-wide">
+                            Explore More Stories
+                        </span>
+
+                        <span className="transition-transform duration-300 group-hover:translate-x-1">
+                            →
+                        </span>
+                    </Link>
                 </div>
 
             </div>
