@@ -10,6 +10,8 @@ import {
 } from "lucide-react";
 import { BsAmazon, BsGooglePlay } from "react-icons/bs";
 import { GiEvilBook } from "react-icons/gi";
+import { PiNotionLogoBold } from "react-icons/pi";
+import { SiFlipkart } from "react-icons/si";
 
 const highlights = [
     {
@@ -304,18 +306,27 @@ export default function AboutBook() {
                         {
                             name: "Amazon",
                             icon: BsAmazon,
+                            Link: 'https://www.amazon.in/dp/1639975594'
                         },
                         {
                             name: "Flipkart",
-                            icon: FlipHorizontal,
+                            icon: SiFlipkart,
+                            Link: 'https://www.flipkart.com/eves-against-odds/p/itm99bca2495d315'
                         },
                         {
                             name: "Apple Books",
                             icon: GiEvilBook,
+                            Link: 'https://books.apple.com/us/book/eves-against-the-odds/id1580783269'
                         },
                         {
                             name: "Google Play",
                             icon: BsGooglePlay,
+                            Link: 'https://play.google.com/store/books/details/Eves_against_the_Odds_25_Inspiring_Women_Entrepren?id=Qis8EAAAQBAJ&hl=en_US&gl=US'
+                        },
+                        {
+                            name: "Notion Press",
+                            icon: PiNotionLogoBold,
+                            Link: 'https://notionpress.com/in/read/eves-against-the-odds/'
                         },
                     ].map((store) => {
                         const Icon = store.icon;
@@ -323,7 +334,9 @@ export default function AboutBook() {
                         return (
                             <a
                                 key={store.name}
-                                href="#"
+                                href={store.Link}
+                                target="_blank"
+                                rel="noopener noreferrer"
                                 className="
                             group
                             relative
