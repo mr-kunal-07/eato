@@ -1,60 +1,42 @@
 "use client";
 
-import Image from "next/image";
+import { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
-import { Quote, ArrowRight, ArrowLeft } from "lucide-react";
+import Image from "next/image";
+import { Quote, ArrowLeft } from "lucide-react";
 
-const items = [
-    {
-        type: "woman",
-        name: "Priya Sharma",
-        role: "Founder, InnovateHer",
-        image: "/women1.jpg",
-        category: "Entrepreneur",
-        story:
-            "Built a successful startup empowering thousands of women entrepreneurs across India.",
-    },
-    {
-        type: "quote",
-        quote:
-            "Success begins the moment you decide not to give up on yourself.",
-    },
-    {
-        type: "woman",
-        name: "Ananya Patel",
-        role: "CEO, GrowthNest",
-        image: "/women2.jpg",
-        category: "Business Leader",
-        story:
-            "Turned challenges into opportunities and created a thriving business impacting countless lives.",
-    },
-    {
-        type: "quote",
-        quote:
-            "Every obstacle carries the seed of a greater opportunity.",
-    },
-    {
-        type: "woman",
-        name: "Meera Kapoor",
-        role: "Author & Entrepreneur",
-        image: "/women3.jpg",
-        category: "Author",
-        story:
-            "Inspiring women globally through leadership, storytelling, and meaningful impact.",
-    },
-    {
-        type: "quote",
-        quote:
-            "The future belongs to women who dare to dream bigger.",
-    },
-];
-
-export default function WomenStoriesGrid() {
+export default function WomenStoriesPage() {
     const router = useRouter();
+    const [activeVolume, setActiveVolume] = useState("vol1");
+    const [stories, setStories] = useState([]);
+    const [isLoading, setIsLoading] = useState(true);
+    const [error, setError] = useState(null);
+
+    // Load data from JSON
+    useEffect(() => {
+        const fetchStories = async () => {
+            setIsLoading(true);
+            setError(null);
+            try {
+                const response = await fetch(`/data/${activeVolume}.json`);
+                if (!response.ok) {
+                    throw new Error(`Failed to load ${activeVolume} data`);
+                }
+                const data = await response.json();
+                setStories(data);
+            } catch (err) {
+                setError(err.message);
+                console.error("Error loading stories:", err);
+            } finally {
+                setIsLoading(false);
+            }
+        };
+
+        fetchStories();
+    }, [activeVolume]);
 
     return (
         <section className="relative overflow-hidden bg-gradient-to-b from-[#120f20] via-[#170f24] to-[#251224] py-24">
-
             {/* Background Effects */}
             <div className="absolute inset-0">
                 <div className="absolute left-0 top-0 h-[450px] w-[450px] rounded-full bg-pink-500/10 blur-[140px]" />
@@ -92,167 +74,238 @@ export default function WomenStoriesGrid() {
 
                 {/* Heading */}
                 <div className="mx-auto mb-20 max-w-3xl text-center">
-
                     <h2 className="mt-4 font-serif text-4xl md:text-6xl text-white leading-tight">
                         Stories That
                         <span className="block text-pink-300">
                             Inspire Generations
                         </span>
                     </h2>
-
-                    <p className="mt-6 text-lg leading-relaxed text-white/60">
-                        Meet some of the remarkable women featured in the book
-                        and discover the wisdom that shaped their journey.
-                    </p>
-
                 </div>
 
-                {/* SAME 3 COLUMN LAYOUT */}
-                <div className="grid gap-8 lg:grid-cols-3">
+                {/* Volume Tabs */}
+                <div className="mb-10 flex justify-center gap-4">
+                    <button
+                        onClick={() => setActiveVolume("vol1")}
+                        className={`
+              px-8
+              py-3
+              rounded-lg
+              font-semibold
+              text-sm
+              uppercase
+              tracking-[0.1em]
+              transition-all
+              duration-300
+              ${activeVolume === "vol1"
+                                ? "bg-gradient-to-r from-pink-500 to-violet-500 text-white shadow-lg shadow-pink-500/30"
+                                : "bg-white/[0.05] border border-white/20 text-white/70 hover:text-white hover:border-white/40 hover:bg-white/[0.08]"
+                            }
+            `}
+                    >
+                        Volume 1
+                    </button>
+                    <button
+                        onClick={() => setActiveVolume("vol2")}
+                        className={`
+              px-8
+              py-3
+              rounded-lg
+              font-semibold
+              text-sm
+              uppercase
+              tracking-[0.1em]
+              transition-all
+              duration-300
+              ${activeVolume === "vol2"
+                                ? "bg-gradient-to-r from-pink-500 to-violet-500 text-white shadow-lg shadow-pink-500/30"
+                                : "bg-white/[0.05] border border-white/20 text-white/70 hover:text-white hover:border-white/40 hover:bg-white/[0.08]"
+                            }
+            `}
+                    >
+                        Volume 2
+                    </button>
+                </div>
 
-                    {items.map((item, index) => (
-                        <div
-                            key={index}
-                            className="
-                group
-                relative
-                overflow-hidden
-                rounded-[32px]
-                border
-                border-white/10
-                bg-white/[0.03]
-                backdrop-blur-xl
-                transition-all
-                duration-500
-                hover:-translate-y-2
-                hover:border-pink-400/30
-                hover:shadow-[0_20px_60px_rgba(236,72,153,0.15)]
-              "
-                        >
-                            {item.type === "woman" ? (
-                                <>
-                                    {/* IMAGE */}
-                                    <div className="relative h-[460px] overflow-hidden">
+                {/* Loading State */}
+                {isLoading && (
+                    <div className="flex justify-center items-center min-h-[400px]">
+                        <div className="text-center">
+                            <div className="inline-block">
+                                <div className="w-12 h-12 border-4 border-white/20 border-t-pink-500 rounded-full animate-spin" />
+                            </div>
+                            <p className="mt-4 text-white/60">Loading stories...</p>
+                        </div>
+                    </div>
+                )}
 
-                                        <Image
-                                            src={item.image}
-                                            alt={item.name}
-                                            width={600}
-                                            height={700}
-                                            className="
-                        h-full
-                        w-full
-                        object-cover
-                        transition-transform
-                        duration-700
-                        group-hover:scale-105
-                      "
-                                        />
+                {/* Error State */}
+                {error && !isLoading && (
+                    <div className="flex justify-center items-center min-h-[400px]">
+                        <div className="text-center max-w-md">
+                            <div className="text-4xl mb-4">⚠️</div>
+                            <p className="text-white/80">{error}</p>
+                            <p className="text-white/50 text-sm mt-2">
+                                Please ensure your data files are in the{" "}
+                                <code className="bg-white/10 px-2 py-1 rounded">/public/data/</code> directory
+                            </p>
+                        </div>
+                    </div>
+                )}
 
-                                        {/* Overlays */}
-                                        <div className="absolute inset-0 bg-gradient-to-t from-[#07070d] via-black/20 to-transparent" />
-
-                                        <div className="absolute inset-0 bg-gradient-to-tr from-pink-500/15 via-transparent to-violet-500/10" />
-
-                                        {/* Category Badge */}
-                                        <div className="absolute left-5 top-5">
-                                            <span
+                {/* Stories Grid */}
+                {!isLoading && !error && stories.length > 0 && (
+                    <div className="grid gap-8 lg:grid-cols-3">
+                        {stories.map((item) => (
+                            <div
+                                key={item.id}
+                                className="
+                  group
+                  relative
+                  overflow-hidden
+                  rounded-[32px]
+                  border
+                  border-white/10
+                  bg-white/[0.03]
+                  backdrop-blur-xl
+                  transition-all
+                  duration-500
+                  hover:-translate-y-2
+                  hover:border-pink-400/30
+                  hover:shadow-[0_20px_60px_rgba(236,72,153,0.15)]
+                "
+                            >
+                                {/* WOMAN CARD */}
+                                {item.type === "woman" ? (
+                                    <>
+                                        {/* IMAGE SECTION */}
+                                        <div className="relative h-[400px] overflow-hidden">
+                                            <Image
+                                                src={item.image}
+                                                alt={item.name}
+                                                width={600}
+                                                height={700}
                                                 className="
-                          rounded-full
-                          border
-                          border-white/20
-                          bg-black/20
-                          px-4
-                          py-2
-                          text-xs
-                          uppercase
-                          tracking-[0.2em]
-                          text-white
-                          backdrop-blur-md
+                          h-full
+                          w-full
+                          object-cover
+                          transition-transform
+                          duration-700
+                          group-hover:scale-105
                         "
-                                            >
-                                                {item.category}
-                                            </span>
-                                        </div>
-                                    </div>
-
-                                    {/* Content */}
-                                    <div className="relative p-8">
-
-                                        <h3 className="font-serif text-3xl text-white">
-                                            {item.name}
-                                        </h3>
-
-                                        <p className="mt-2 text-sm uppercase tracking-[0.25em] text-pink-300">
-                                            {item.role}
-                                        </p>
-
-                                        <div className="mt-5 h-px w-16 bg-gradient-to-r from-pink-400 to-transparent" />
-
-                                        <p
-                                            className="
-                        mt-5
-                        text-white/65
-                        leading-relaxed
-                        transition-all
-                        duration-300
-                        group-hover:text-white/85
-                      "
-                                        >
-                                            {item.story}
-                                        </p>
-
-                                    </div>
-                                </>
-                            ) : (
-                                <>
-                                    {/* QUOTE CARD */}
-                                    <div className="relative flex min-h-[620px] flex-col justify-center p-10">
-
-                                        {/* Watermark */}
-                                        <Quote
-                                            size={150}
-                                            className="
-                        absolute
-                        right-5
-                        top-5
-                        text-white/[0.04]
-                      "
-                                        />
-
-                                        {/* Accent Glow */}
-                                        <div className="absolute inset-0 bg-gradient-to-br from-pink-500/5 via-transparent to-violet-500/5" />
-
-                                        <div className="relative z-10">
-
-                                            <Quote
-                                                size={52}
-                                                className="mb-8 text-pink-300/80"
+                                                priority={false}
                                             />
 
-                                            <p
-                                                className="
-                          font-serif
-                          text-3xl
-                          md:text-4xl
-                          leading-[1.25]
-                          text-white
-                        "
-                                            >
-                                                “{item.quote}”
-                                            </p>
+                                            {/* Dark to Transparent Overlay */}
+                                            <div className="absolute inset-0 bg-gradient-to-t from-[#07070d] via-black/20 to-transparent" />
 
-                                            <div className="mt-10 h-px w-24 bg-gradient-to-r from-pink-400 to-transparent" />
+                                            {/* Color Gradient Overlay */}
+                                            <div className="absolute inset-0 bg-gradient-to-tr from-pink-500/15 via-transparent to-violet-500/10" />
 
+                                            {/* Category Badge */}
+                                            <div className="absolute left-5 top-5">
+                                                <span
+                                                    className="
+                            rounded-full
+                            border
+                            border-white/20
+                            bg-black/20
+                            px-4
+                            py-2
+                            text-xs
+                            uppercase
+                            tracking-[0.2em]
+                            text-white
+                            backdrop-blur-md
+                          "
+                                                >
+                                                    {item.category}
+                                                </span>
+                                            </div>
                                         </div>
 
-                                    </div>
-                                </>
-                            )}
-                        </div>
-                    ))}
-                </div>
+                                        {/* CONTENT SECTION */}
+                                        <div className="relative p-8">
+                                            <h3 className="font-serif text-3xl text-white">
+                                                {item.name}
+                                            </h3>
 
+                                            <p className="mt-2 text-sm uppercase tracking-[0.25em] text-pink-300">
+                                                {item.role}
+                                            </p>
+
+                                            {/* Divider Line */}
+                                            <div className="mt-5 h-px w-16 bg-gradient-to-r from-pink-400 to-transparent" />
+
+                                            {/* Story Text */}
+                                            <p
+                                                className="
+                          mt-5
+                          text-white/65
+                          leading-relaxed
+                          transition-all
+                          duration-300
+                          group-hover:text-white/85
+                        "
+                                            >
+                                                {item.story}
+                                            </p>
+                                        </div>
+                                    </>
+                                ) : (
+                                    <>
+                                        {/* QUOTE CARD */}
+                                        <div className="relative flex min-h-[620px] flex-col justify-center p-10">
+                                            {/* Watermark */}
+                                            <Quote
+                                                size={150}
+                                                className="
+                          absolute
+                          right-5
+                          top-5
+                          text-white/[0.04]
+                        "
+                                            />
+
+                                            {/* Accent Glow */}
+                                            <div className="absolute inset-0 bg-gradient-to-br from-pink-500/5 via-transparent to-violet-500/5" />
+
+                                            <div className="relative z-10">
+                                                {/* Leading Quote Icon */}
+                                                <Quote
+                                                    size={52}
+                                                    className="mb-8 text-pink-300/80"
+                                                />
+
+                                                {/* Quote Text */}
+                                                <p
+                                                    className="
+                            font-serif
+                            text-3xl
+                            md:text-4xl
+                            leading-[1.25]
+                            text-white
+                          "
+                                                >
+                                                    "{item.quote}"
+                                                </p>
+
+                                                {/* Divider Line */}
+                                                <div className="mt-10 h-px w-24 bg-gradient-to-r from-pink-400 to-transparent" />
+                                            </div>
+                                        </div>
+                                    </>
+                                )}
+                            </div>
+                        ))}
+                    </div>
+                )}
+
+                {/* Empty State */}
+                {!isLoading && !error && stories.length === 0 && (
+                    <div className="flex justify-center items-center min-h-[400px]">
+                        <p className="text-white/60">No stories available</p>
+                    </div>
+                )}
             </div>
         </section>
     );

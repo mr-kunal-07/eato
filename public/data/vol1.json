@@ -1,0 +1,347 @@
+[
+  {
+    "id": 1,
+    "type": "woman",
+    "name": "Ms. Pabiben Rabari",
+    "role": "Founder",
+    "image": "/women/vol1/priya-sharma.jpg",
+    "category": "Entrepreneur",
+    "story": "Built a successful startup empowering thousands of women entrepreneurs across India."
+  },
+  {
+    "id": 2,
+    "type": "quote",
+    "quote": "Success begins the moment you decide not to give up on yourself."
+  },
+  {
+    "id": 3,
+    "type": "woman",
+    "name": "Dr. Tarita Shankar",
+    "role": "Founder",
+    "image": "/women/vol1/ananya-patel.jpg",
+    "category": "Chairperson",
+    "story": "Turned challenges into opportunities and created a thriving business impacting countless lives."
+  },
+  {
+    "id": 4,
+    "type": "quote",
+    "quote": "Every obstacle carries the seed of a greater opportunity."
+  },
+  {
+    "id": 5,
+    "type": "woman",
+    "name": "Dr. Ushy Mohan Das",
+    "role": "Founder & Nucleus",
+    "image": "/women/vol1/meera-kapoor.jpg",
+    "category": "Entrepreneur",
+    "story": "Inspiring women globally through leadership, storytelling, and meaningful impact."
+  },
+  {
+    "id": 6,
+    "type": "quote",
+    "quote": "The future belongs to women who dare to dream bigger."
+  },
+  {
+    "id": 7,
+    "type": "woman",
+    "name": "Ms. Nabomita Mazumdar",
+    "role": "Founder",
+    "image": "/women/vol1/deepali-singh.jpg",
+    "category": "Entrepreneur",
+    "story": "Championing diversity in tech and creating pathways for thousands of aspiring women developers."
+  },
+  {
+    "id": 8,
+    "type": "quote",
+    "quote": "Innovation knows no gender, but opportunity often does—let's change that."
+  },
+  {
+    "id": 9,
+    "type": "woman",
+    "name": "Ms. Sharmila Divatia",
+    "role": "Managing Director",
+    "image": "/women/vol1/rajini-menon.jpg",
+    "category": "Entrepreneur",
+    "story": "Dedicating her life to education and women empowerment in rural communities across South India."
+  },
+  {
+    "id": 10,
+    "type": "quote",
+    "quote": "When women rise, entire communities transform and flourish."
+  },
+  {
+    "id": 11,
+    "type": "woman",
+    "name": "Ms. Shabia Walia",
+    "role": "Founder",
+    "image": "/women/vol1/shabia-walia.jpg",
+    "category": "Author & Media Producer",
+    "story": "Leading sustainable business practices while mentoring over 500 women entrepreneurs in green tech."
+  },
+  {
+    "id": 12,
+    "type": "quote",
+    "quote": "Sustainable success is built on the foundation of shared values and collective growth."
+  },
+  {
+    "id": 13,
+    "type": "woman",
+    "name": "Ms. Manisha Raisinghani",
+    "role": "Co-Founder & CTO",
+    "image": "/women/vol1/seema-desai.jpg",
+    "category": "Listed Top 25 Forbes",
+    "story": "Producing powerful stories that celebrate women's resilience and shape cultural conversations."
+  },
+  {
+    "id": 14,
+    "type": "quote",
+    "quote": "Think Big - Achieve your next 3 years plan in the next 12 months."
+  },
+  {
+    "id": 15,
+    "type": "woman",
+    "name": "Ms. Jaya Vaidhyanathan",
+    "role": "CEO",
+    "image": "/women/vol1/kavya-nair.jpg",
+    "category": "Entrepreneur",
+    "story": "Revolutionizing affordable healthcare access for underserved populations across Asia and Africa."
+  },
+  {
+    "id": 16,
+    "type": "quote",
+    "quote": "Health equity is not a luxury—it's a fundamental human right we must fight for."
+  },
+  {
+    "id": 17,
+    "type": "woman",
+    "name": "Ms. Reema Sanghavi",
+    "role": "Managing Director",
+    "image": "/women/vol1/reema-sanghavi.jpg",
+    "category": "Co-founder, Pinkathon",
+    "story": "Channeling capital toward women-led ventures and reshaping the venture capital landscape."
+  },
+  {
+    "id": 18,
+    "type": "quote",
+    "quote": "Investing in women isn't charity—it's the smartest business decision you'll make."
+  },
+  {
+    "id": 19,
+    "type": "woman",
+    "name": "Ms. Tanul Mishra",
+    "role": "Founder",
+    "image": "/women/vol1/tanul-mishra.jpg",
+    "category": "CEO",
+    "story": "Transforming education systems to ensure equal opportunities for girls across economically disadvantaged areas."
+  },
+  {
+    "id": 20,
+    "type": "quote",
+    "quote": "Education is the most powerful weapon against limitations; it sets us truly free."
+  },
+  {
+    "id": 21,
+    "type": "woman",
+    "name": "Ms. Neha Kanabar",
+    "role": "Founder",
+    "image": "/women/vol1/neha-kanabar.jpg",
+    "category": "Community Entrepreneur",
+    "story": "Using art as a medium to amplify marginalized voices and build inclusive communities."
+  },
+  {
+    "id": 22,
+    "type": "quote",
+    "quote": "Art transcends boundaries; through it, we speak the language of transformation."
+  },
+  {
+    "id": 23,
+    "type": "woman",
+    "name": "Ms. Shikha Pandey",
+    "role": "Entrepreneur",
+    "image": "/women/vol1/shikha-pandey.jpg",
+    "category": "Yogini & Podcaster",
+    "story": "Leading climate action initiatives and mobilizing communities toward sustainable living practices."
+  },
+  {
+    "id": 24,
+    "type": "quote",
+    "quote": "The climate crisis demands courage, and courage is what every woman has in abundance."
+  },
+  {
+    "id": 25,
+    "type": "woman",
+    "name": "Ms. Shridaa Raheja",
+    "role": "Founder",
+    "image": "/women/vol1/shridaa-raheja.jpg",
+    "category": "Operations & Design Head",
+    "story": "Building multiple ventures that create employment and opportunities for underrepresented communities."
+  },
+  {
+    "id": 26,
+    "type": "quote",
+    "quote": "Empowerment is not a gift; it's a right that every woman must claim for herself and her community."
+  },
+  {
+    "id": 27,
+    "type": "woman",
+    "name": "Ms. Namrata Tatiya",
+    "role": "Founder",
+    "image": "/women/vol1/namrata-tatiya.jpg",
+    "category": "Senior Consultant",
+    "story": "Creating innovative solutions to address social challenges and drive inclusive growth."
+  },
+  {
+    "id": 28,
+    "type": "quote",
+    "quote": "Innovation is the bridge between challenges and opportunities; it is the key to unlocking a better future for all."
+  },
+  {
+    "id": 28,
+    "type": "woman",
+    "name": "Ms. Chandni Khan",
+    "role": "Co-Founder",
+    "image": "/women/vol1/chandni-khan.jpg",
+    "category": "Entrepreneur",
+    "story": "Creating innovative solutions to address social challenges and drive inclusive growth."
+  },
+  {
+    "id": 29,
+    "type": "quote",
+    "quote": "Innovation is the bridge between challenges and opportunities; it is the key to unlocking a better future for all."
+  },
+  {
+    "id": 30,
+    "type": "woman",
+    "name": "Ms. Neety Gupta",
+    "role": "Proprietor",
+    "image": "/women/vol1/neety-gupta.jpg",
+    "category": "Entrepreneur",
+    "story": "Creating innovative solutions to address social challenges and drive inclusive growth."
+  },
+  {
+    "id": 31,
+    "type": "quote",
+    "quote": "Innovation is the bridge between challenges and opportunities; it is the key to unlocking a better future for all."
+  },
+  {
+    "id": 32,
+    "type": "woman",
+    "name": "Ms. Namita Shah",
+    "role": "Co-Founder",
+    "image": "/women/vol1/namita-shah.jpg",
+    "category": "Entrepreneur",
+    "story": "Creating innovative solutions to address social challenges and drive inclusive growth."
+  },
+  {
+    "id": 33,
+    "type": "quote",
+    "quote": "Innovation is the bridge between challenges and opportunities; it is the key to unlocking a better future for all."
+  },
+  {
+    "id": 34,
+    "type": "woman",
+    "name": "Dr. Sandhya Mayenkar",
+    "role": "Founder",
+    "image": "/women/vol1/sandhya-mayenkar.jpg",
+    "category": "Entrepreneur",
+    "story": "Creating innovative solutions to address social challenges and drive inclusive growth."
+  },
+  {
+    "id": 34,
+    "type": "quote",
+    "quote": "Innovation is the bridge between challenges and opportunities; it is the key to unlocking a better future for all."
+  },
+  {
+    "id": 35,
+    "type": "woman",
+    "name": "Ms. Vinika Chandwani",
+    "role": "CEO",
+    "image": "/women/vol1/vinika-chandwani.jpg",
+    "category": "Director",
+    "story": "Creating innovative solutions to address social challenges and drive inclusive growth."
+  },
+  {
+    "id": 36,
+    "type": "quote",
+    "quote": "Innovation is the bridge between challenges and opportunities; it is the key to unlocking a better future for all."
+  },
+  {
+    "id": 37,
+    "type": "woman",
+    "name": "Ms. Anubha Singhai",
+    "role": "Director",
+    "image": "/women/vol1/anubha-singhai.jpg",
+    "category": "Entrepreneur",
+    "story": "Creating innovative solutions to address social challenges and drive inclusive growth."
+  },
+  {
+    "id": 38,
+    "type": "quote",
+    "quote": "Innovation is the bridge between challenges and opportunities; it is the key to unlocking a better future for all."
+  },
+  {
+    "id": 39,
+    "type": "woman",
+    "name": "Ms. Ivy Manohara",
+    "role": "Founder",
+    "image": "/women/vol1/ivy-manohara.jpg",
+    "category": "Entrepreneur",
+    "story": "Creating innovative solutions to address social challenges and drive inclusive growth."
+  },
+  {
+    "id": 40,
+    "type": "quote",
+    "quote": "Innovation is the bridge between challenges and opportunities; it is the key to unlocking a better future for all."
+  },
+  {
+    "id": 41,
+    "type": "woman",
+    "name": "Ms. Suvarna Bhat",
+    "role": "Founder & CEO",
+    "image": "/women/vol1/suvarna-bhat.jpg",
+    "category": "Entrepreneur",
+    "story": "Creating innovative solutions to address social challenges and drive inclusive growth."
+  },
+  {
+    "id": 42,
+    "type": "quote",
+    "quote": "Innovation is the bridge between challenges and opportunities; it is the key to unlocking a better future for all."
+  },
+  {
+    "id": 43,
+    "type": "woman",
+    "name": "Dr. Megha Bhatt",
+    "role": "Founder",
+    "image": "/women/vol1/megha-bhatt.jpg",
+    "category": "Entrepreneur",
+    "story": "Creating innovative solutions to address social challenges and drive inclusive growth."
+  },
+  {
+    "id": 44,
+    "type": "quote",
+    "quote": "Innovation is the bridge between challenges and opportunities; it is the key to unlocking a better future for all."
+  },
+  {
+    "id": 45,
+    "type": "woman",
+    "name": "Ms. Roli Pandey",
+    "role": "Founder",
+    "image": "/women/vol1/roli-pandey.jpg",
+    "category": "CTO",
+    "story": "Creating innovative solutions to address social challenges and drive inclusive growth."
+  },
+  {
+    "id": 46,
+    "type": "quote",
+    "quote": "Innovation is the bridge between challenges and opportunities; it is the key to unlocking a better future for all."
+  },
+  {
+    "id": 47,
+    "type": "woman",
+    "name": "Dr. Tejal Kanwar",
+    "role": "Founder",
+    "image": "/women/vol1/tejal-kanwar.jpg",
+    "category": "Entrepreneur",
+    "story": "Creating innovative solutions to address social challenges and drive inclusive growth."
+  }
+]

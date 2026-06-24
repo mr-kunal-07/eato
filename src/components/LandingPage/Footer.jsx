@@ -4,18 +4,10 @@ import Link from "next/link";
 import {
     FaLinkedin,
     FaFacebook,
-    FaEnvelope,
-    FaGlobe,
-    FaArrowUp,
 } from "react-icons/fa";
 
 export default function Footer() {
-    const scrollToTop = () => {
-        window.scrollTo({
-            top: 0,
-            behavior: "smooth",
-        });
-    };
+    ;
 
     return (
         <footer className="relative overflow-hidden border-t border-white/10 bg-[#08070d]">
