@@ -3,7 +3,7 @@
     "id": 1,
     "type": "woman",
     "name": "Ms. Pabiben Rabari",
-    "role": "Founder",
+    "role": "Founder, Pabiben.com",
     "image": "/Vol1 Images/Pabiben Rabari.jpeg",
     "story": "The real empowerment is the ability to think and choose. Use maximum creativity in our work, match the potential in ourselves to fulfil our dreams and get self-respect and recognition."
   },
@@ -17,7 +17,7 @@
     "id": 3,
     "type": "woman",
     "name": "Dr. Tarita Shankar",
-    "role": "Founder",
+    "role": "Founder, Indira Group of Institutes Pune",
     "image": "/Vol1 Images/Tarita Shankar.jpeg",
     "story": "Successful leaders see the opportunities in every difficulty, rather than the difficulty in every opportunity."
   },
@@ -31,7 +31,7 @@
     "id": 5,
     "type": "woman",
     "name": "Dr. Ushy Mohan Das",
-    "role": "Founder & Nucleus",
+    "role": "Founder & Nucleus, Ushy’s Wisdom Works",
     "image": "/Vol1 Images/Ushy Mohan Das.jpeg",
     "story": "When your soul burns with purpose and passion, it's your duty to be burnt to ashes by it."
   },
@@ -45,7 +45,7 @@
     "id": 7,
     "type": "woman",
     "name": "Ms. Shabia Walia",
-    "role": "Founder",
+    "role": "Founder, Hyacinth Sustainable Solutions Pvt. Ltd",
     "image": "/Vol1 Images/Shabia Walia.jpeg",
     "story": "I am the writer of my life film and I choose to be the hero rather than the victim. Life is too short to live by someone else’s expectations of you."
   },
@@ -59,7 +59,7 @@
     "id": 9,
     "type": "woman",
     "name": "Ms. Sharmila Divatia",
-    "role": "Managing Director",
+    "role": "Managing Director, Lac Vardaan Association, an NPO",
     "image": "/Vol1 Images/Sharmila Divatia.jpeg",
     "story": "I don’t know how to string the words “give” and “up” together. So you will find me bouncing from a supposed failure right back on the winners table in a short span of time."
   },
@@ -73,7 +73,7 @@
     "id": 11,
     "type": "woman",
     "name": "Ms. Nabomita Mazumdar",
-    "role": "Founder",
+    "role": "Founder, Nabomita.com, President of India Awardee.",
     "image": "/Vol1 Images/Nabomita Mazumdar.jpeg",
     "story": "The humility to fail takes the fear out of it."
   },
@@ -87,7 +87,7 @@
     "id": 13,
     "type": "woman",
     "name": "Ms. Manisha Raisinghani",
-    "role": "Co-Founder & CTO",
+    "role": "Co-Founder & CTO, LogiNext Solutions",
     "image": "/Vol1 Images/Manisha Raisinghani.jpeg",
     "story": "Think Big - Achieve your next 3 years plan in the next 12 months."
   },
@@ -102,7 +102,7 @@
     "id": 15,
     "type": "woman",
     "name": "Ms. Reema Sanghavi",
-    "role": "Managing Director",
+    "role": "Managing Director, Maximus Mice and Media Solutions Pvt Ltd",
     "image": "/Vol1 Images/Reema Sanghavi.jpeg",
     "story": "Live to Inspire."
   },
@@ -116,7 +116,7 @@
     "id": 17,
     "type": "woman",
     "name": "Ms. Jaya Vaidhyanathan",
-    "role": "CEO",
+    "role": "CEO, BCT Digital",
     "image": "/Vol1 Images/Jaya Vaidhyanathan.jpeg",
     "story": "If you never failed, it means you did not set the bar high enough. Dream big enough so that you fail, and have the courage to aim higher next time."
   },
@@ -199,8 +199,8 @@
   {
     "id": 29,
     "type": "woman",
-    "name": "Ms. Chandni Khan, Voice Of Slum",
-    "role": "Co-Founder",
+    "name": "Ms. Chandni Khan",
+    "role": "Co-Founder, Voice Of Slum",
     "image": "/Vol1 Images/Chandni Khan.jpeg",
     "story": "जब दो कूड़ा बीनने वाले बच्चे ये सब कर सकते है, तो कोई भी कुछ भी कर सकता है, बस जरुरत है एक पहल की!"
   },
