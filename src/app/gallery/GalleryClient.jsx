@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { useEffect, useState } from "react";
+import { useCallback, useEffect, useState } from "react";
 import { ArrowLeft, ChevronLeft, ChevronRight, X } from "lucide-react";
 
 export default function GalleryClient({ images }) {
@@ -10,14 +10,14 @@ export default function GalleryClient({ images }) {
     const activeImage = activeIndex === null ? null : images[activeIndex];
 
     const closeLightbox = () => setActiveIndex(null);
-    const showPrevious = () =>
+    const showPrevious = useCallback(() =>
         setActiveIndex((current) =>
             current === null ? current : (current - 1 + images.length) % images.length
-        );
-    const showNext = () =>
+        ), [images.length]);
+    const showNext = useCallback(() =>
         setActiveIndex((current) =>
             current === null ? current : (current + 1) % images.length
-        );
+        ), [images.length]);
 
     useEffect(() => {
         if (activeIndex === null) return;
@@ -35,7 +35,7 @@ export default function GalleryClient({ images }) {
             document.body.style.overflow = "";
             window.removeEventListener("keydown", handleKeyDown);
         };
-    }, [activeIndex]);
+    }, [activeIndex, showNext, showPrevious]);
 
     return (
         <main className="min-h-screen bg-[#08070d] text-white">
