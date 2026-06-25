@@ -36,8 +36,34 @@ export default function Footer() {
                         and entrepreneurial excellence.
                     </p>
 
+                    <div className="mt-14 flex flex-wrap items-center justify-center gap-8 md:gap-12">
+                        <div className="flex h-24 w-48 items-center justify-center rounded-2xl border border-white/10 bg-white/5 p-6 backdrop-blur-sm transition-all duration-300 hover:border-pink-300/30 hover:bg-white/10">
+                            <img
+                                src="/patners/logo1.png"
+                                alt="Partner 1"
+                                className="max-h-12 w-auto object-contain opacity-80"
+                            />
+                        </div>
 
+                        <div className="flex h-24 w-48 items-center justify-center rounded-2xl border border-white/10 bg-white/5 p-6 backdrop-blur-sm transition-all duration-300 hover:border-pink-300/30 hover:bg-white/10">
+                            <img
+                                src="/patners/logo2.png"
+                                alt="Partner 2"
+                                className="max-h-12 w-auto object-contain opacity-80"
+                            />
+                        </div>
+
+                        <div className="flex h-24 w-48 items-center justify-center rounded-2xl border border-white/10 bg-white/5 p-6 backdrop-blur-sm transition-all duration-300 hover:border-pink-300/30 hover:bg-white/10">
+                            <img
+                                src="/patners/logo3.png"
+                                alt="Partner 3"
+                                className="max-h-12 w-auto object-contain opacity-80"
+                            />
+                        </div>
+                    </div>
                 </div>
+
+
 
                 {/* Main Footer */}
                 <div className="grid gap-12 py-20 lg:grid-cols-4">
@@ -138,7 +164,7 @@ export default function Footer() {
                         </div>
                         <div className="mt-10">
                             <a
-                                href="https://billenniumdivas.vercel.app/"
+                                href="https://billenniumdivas.fund/"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="inline-flex items-center gap-3 rounded-md bg-gradient-to-r from-pink-500/70 to-purple-500/40 px-4 py-4 text-md font-semibold text-white shadow-lg shadow-pink-500/20 transition-all duration-300 hover:scale-105 hover:shadow-pink-500/40"

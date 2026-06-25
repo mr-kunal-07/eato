@@ -124,7 +124,7 @@ export default function WomenStoriesPage() {
                                                 alt={item.name}
                                                 width={600}
                                                 height={700}
-                                                className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105"
+                                                className="h-full w-full object-cover object-top transition-transform duration-700 group-hover:scale-105"
                                                 priority={false}
                                             />
 

@@ -17,7 +17,7 @@
     "id": 3,
     "type": "woman",
     "name": "Ms. Divya Momaya",
-    "role": "Fashion Entrepreneur",
+    "role": "Founder & Director",
     "image": "/women/vol2/mira-patel.jpg",
     "story": "Creating sustainable fashion while preserving traditional crafts and employing rural artisans."
   },
@@ -30,8 +30,8 @@
   {
     "id": 5,
     "type": "woman",
-    "name": "Tara Deshmukh",
-    "role": "Data Scientist & AI Researcher",
+    "name": "Ms. Kalpana Rao",
+    "role": "Entrepreneur & Actor",
     "image": "/women/vol2/tara-deshmukh.jpg",
     "story": "Pioneering ethical AI research and advocating for responsible technology implementation globally."
   },
@@ -44,8 +44,8 @@
   {
     "id": 7,
     "type": "woman",
-    "name": "Priyanka Mishra",
-    "role": "Food Security Innovator",
+    "name": "Ms. Archana Khosla Burman",
+    "role": "Founder",
     "image": "/women/vol2/priyanka-mishra.jpg",
     "story": "Revolutionizing farming practices to ensure food security and empower small-scale farmers."
   },
@@ -58,8 +58,8 @@
   {
     "id": 9,
     "type": "woman",
-    "name": "Kavita Iyer",
-    "role": "Mental Health Advocate",
+    "name": "Dr. Nidhika Bahl",
+    "role": "Founder",
     "image": "/women/vol2/kavita-iyer.jpg",
     "story": "Destigmatizing mental health and building accessible support systems for vulnerable populations."
   },
@@ -72,8 +72,8 @@
   {
     "id": 11,
     "type": "woman",
-    "name": "Nidhi Agarwal",
-    "role": "Legal Rights Advocate",
+    "name": "Ms. Charul Jaitly",
+    "role": "Co-Founder",
     "image": "/women/vol2/nidhi-agarwal.jpg",
     "story": "Fighting for justice and legal equality through innovative advocacy and community education."
   },
@@ -86,8 +86,8 @@
   {
     "id": 13,
     "type": "woman",
-    "name": "Sneha Bhat",
-    "role": "Robotics Engineer",
+    "name": "Ms. Vijaya Polke",
+    "role": "Founder",
     "image": "/women/vol2/sneha-bhat.jpg",
     "story": "Developing cutting-edge robotic solutions while inspiring the next generation of women engineers."
   },
@@ -100,8 +100,8 @@
   {
     "id": 15,
     "type": "woman",
-    "name": "Anjana Reddy",
-    "role": "Tourism & Heritage Conservationist",
+    "name": "Ms. Mina Merchantt",
+    "role": "Travelism Expert",
     "image": "/women/vol2/anjana-reddy.jpg",
     "story": "Preserving cultural heritage while creating sustainable tourism opportunities for local communities."
   },
@@ -114,10 +114,9 @@
   {
     "id": 17,
     "type": "woman",
-    "name": "Lakshmi Sinha",
-    "role": "Water Management Expert",
+    "name": "Ms. Tanushree Ishani",
+    "role": "Founder & Director",
     "image": "/women/vol2/lakshmi-sinha.jpg",
-    "category": "Environment",
     "story": "Implementing innovative water conservation strategies impacting millions in water-scarce regions."
   },
   {
@@ -129,13 +128,237 @@
   {
     "id": 19,
     "type": "woman",
-    "name": "Drishti Sharma",
-    "role": "Supply Chain Innovator",
+    "name": "Ms. Shambhavi Singh",
+    "role": "Founder",
     "image": "/women/vol2/drishti-sharma.jpg",
     "story": "Revolutionizing supply chains with technology while ensuring fair wages and ethical practices."
   },
   {
     "id": 20,
+    "type": "quote",
+    "quote": "A truly modern supply chain puts people and planet before profit margins.",
+    "author": "Drishti Sharma"
+  },
+  {
+    "id": 21,
+    "type": "woman",
+    "name": "Dr. Anasuya Roy",
+    "role": "Founder & CEO",
+    "image": "/women/vol2/drishti-sharma.jpg",
+    "story": "Revolutionizing supply chains with technology while ensuring fair wages and ethical practices."
+  },
+  {
+    "id": 22,
+    "type": "quote",
+    "quote": "A truly modern supply chain puts people and planet before profit margins.",
+    "author": "Drishti Sharma"
+  },
+  {
+    "id": 23,
+    "type": "woman",
+    "name": "Ms. Payal Shankar",
+    "role": "Creator",
+    "image": "/women/vol2/drishti-sharma.jpg",
+    "story": "Revolutionizing supply chains with technology while ensuring fair wages and ethical practices."
+  },
+  {
+    "id": 24,
+    "type": "quote",
+    "quote": "A truly modern supply chain puts people and planet before profit margins.",
+    "author": "Drishti Sharma"
+  },
+  {
+    "id": 25,
+    "type": "woman",
+    "name": "Ms. Anchal Andrews",
+    "role": "Founder",
+    "image": "/women/vol2/drishti-sharma.jpg",
+    "story": "Revolutionizing supply chains with technology while ensuring fair wages and ethical practices."
+  },
+  {
+    "id": 26,
+    "type": "quote",
+    "quote": "A truly modern supply chain puts people and planet before profit margins.",
+    "author": "Drishti Sharma"
+  },
+  {
+    "id": 27,
+    "type": "woman",
+    "name": "Ms. Monuca Arora",
+    "role": "Founder & CEO",
+    "image": "/women/vol2/drishti-sharma.jpg",
+    "story": "Revolutionizing supply chains with technology while ensuring fair wages and ethical practices."
+  },
+  {
+    "id": 28,
+    "type": "quote",
+    "quote": "A truly modern supply chain puts people and planet before profit margins.",
+    "author": "Drishti Sharma"
+  },
+  {
+    "id": 29,
+    "type": "woman",
+    "name": "Ms. Vandana Tolani",
+    "role": "Founder & CEO",
+    "image": "/women/vol2/drishti-sharma.jpg",
+    "story": "Revolutionizing supply chains with technology while ensuring fair wages and ethical practices."
+  },
+  {
+    "id": 30,
+    "type": "quote",
+    "quote": "A truly modern supply chain puts people and planet before profit margins.",
+    "author": "Drishti Sharma"
+  },
+  {
+    "id": 31,
+    "type": "woman",
+    "name": "Ms. Prabaarja Bedi",
+    "role": "CEO",
+    "image": "/women/vol2/drishti-sharma.jpg",
+    "story": "Revolutionizing supply chains with technology while ensuring fair wages and ethical practices."
+  },
+  {
+    "id": 32,
+    "type": "quote",
+    "quote": "A truly modern supply chain puts people and planet before profit margins.",
+    "author": "Drishti Sharma"
+  },
+  {
+    "id": 33,
+    "type": "woman",
+    "name": "Ms. Sneha Bagrecha",
+    "role": "Founder",
+    "image": "/women/vol2/drishti-sharma.jpg",
+    "story": "Revolutionizing supply chains with technology while ensuring fair wages and ethical practices."
+  },
+  {
+    "id": 34,
+    "type": "quote",
+    "quote": "A truly modern supply chain puts people and planet before profit margins.",
+    "author": "Drishti Sharma"
+  },
+  {
+    "id": 35,
+    "type": "woman",
+    "name": "Ms. Jigisha Gandhi",
+    "role": "Director",
+    "image": "/women/vol2/drishti-sharma.jpg",
+    "story": "Revolutionizing supply chains with technology while ensuring fair wages and ethical practices."
+  },
+  {
+    "id": 36,
+    "type": "quote",
+    "quote": "A truly modern supply chain puts people and planet before profit margins.",
+    "author": "Drishti Sharma"
+  },
+  {
+    "id": 37,
+    "type": "woman",
+    "name": "Ms. Nafeesa Kotwala",
+    "role": "Director",
+    "image": "/women/vol2/drishti-sharma.jpg",
+    "story": "Revolutionizing supply chains with technology while ensuring fair wages and ethical practices."
+  },
+  {
+    "id": 38,
+    "type": "quote",
+    "quote": "A truly modern supply chain puts people and planet before profit margins.",
+    "author": "Drishti Sharma"
+  },
+  {
+    "id": 39,
+    "type": "woman",
+    "name": "Ms. Sonal Doshii",
+    "role": "Director",
+    "image": "/women/vol2/drishti-sharma.jpg",
+    "story": "Revolutionizing supply chains with technology while ensuring fair wages and ethical practices."
+  },
+  {
+    "id": 40,
+    "type": "quote",
+    "quote": "A truly modern supply chain puts people and planet before profit margins.",
+    "author": "Drishti Sharma"
+  },
+  {
+    "id": 41,
+    "type": "woman",
+    "name": "Ms. Shipra Rathi",
+    "role": "Founder & Director",
+    "image": "/women/vol2/drishti-sharma.jpg",
+    "story": "Revolutionizing supply chains with technology while ensuring fair wages and ethical practices."
+  },
+  {
+    "id": 42,
+    "type": "quote",
+    "quote": "A truly modern supply chain puts people and planet before profit margins.",
+    "author": "Drishti Sharma"
+  },
+  {
+    "id": 43,
+    "type": "woman",
+    "name": "Ms. Mamta Kothari",
+    "role": "Owner",
+    "image": "/women/vol2/drishti-sharma.jpg",
+    "story": "Revolutionizing supply chains with technology while ensuring fair wages and ethical practices."
+  },
+  {
+    "id": 44,
+    "type": "quote",
+    "quote": "A truly modern supply chain puts people and planet before profit margins.",
+    "author": "Drishti Sharma"
+  },
+  {
+    "id": 45,
+    "type": "woman",
+    "name": "Dr. Divya Jaitly",
+    "role": "Founder & Director",
+    "image": "/women/vol2/drishti-sharma.jpg",
+    "story": "Revolutionizing supply chains with technology while ensuring fair wages and ethical practices."
+  },
+  {
+    "id": 46,
+    "type": "quote",
+    "quote": "A truly modern supply chain puts people and planet before profit margins.",
+    "author": "Drishti Sharma"
+  },
+  {
+    "id": 47,
+    "type": "woman",
+    "name": "Mr. Pooja Shah",
+    "role": "Managing Director",
+    "image": "/women/vol2/drishti-sharma.jpg",
+    "story": "Revolutionizing supply chains with technology while ensuring fair wages and ethical practices."
+  },
+  {
+    "id": 48,
+    "type": "quote",
+    "quote": "A truly modern supply chain puts people and planet before profit margins.",
+    "author": "Drishti Sharma"
+  },
+  {
+    "id": 49,
+    "type": "woman",
+    "name": "Mr. Pooja Shah",
+    "role": "Managing Director",
+    "image": "/women/vol2/drishti-sharma.jpg",
+    "story": "Revolutionizing supply chains with technology while ensuring fair wages and ethical practices."
+  },
+  {
+    "id": 50,
+    "type": "quote",
+    "quote": "A truly modern supply chain puts people and planet before profit margins.",
+    "author": "Drishti Sharma"
+  },
+  {
+    "id": 51,
+    "type": "woman",
+    "name": "Dr. Anjana Vinod",
+    "role": "Director",
+    "image": "/women/vol2/drishti-sharma.jpg",
+    "story": "Revolutionizing supply chains with technology while ensuring fair wages and ethical practices."
+  },
+  {
+    "id": 52,
     "type": "quote",
     "quote": "A truly modern supply chain puts people and planet before profit margins.",
     "author": "Drishti Sharma"

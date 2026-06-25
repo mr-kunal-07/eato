@@ -4,21 +4,21 @@
     "type": "woman",
     "name": "Ms. Pabiben Rabari",
     "role": "Founder",
-    "image": "/Vol1 Images/1.png",
+    "image": "/Vol1 Images/Pabiben Rabari.jpeg",
     "story": "Built a successful startup empowering thousands of women entrepreneurs across India."
   },
   {
     "id": 2,
     "type": "quote",
-    "quote": "Success begins the moment you decide not to give up on yourself.",
-    "author": "Ms. Pabiben Rabari"
+    "quote": "Build Value and the Valuation will Follow.",
+    "author": "Mr. Bhavesh Kothari"
   },
   {
     "id": 3,
     "type": "woman",
     "name": "Dr. Tarita Shankar",
     "role": "Founder",
-    "image": "/women/vol1/ananya-patel.jpg",
+    "image": "/Vol1 Images/Tarita Shankar.jpeg",
     "story": "Turned challenges into opportunities and created a thriving business impacting countless lives."
   },
   {
@@ -31,7 +31,7 @@
     "type": "woman",
     "name": "Dr. Ushy Mohan Das",
     "role": "Founder & Nucleus",
-    "image": "/women/vol1/meera-kapoor.jpg",
+    "image": "/Vol1 Images/Ushy Mohan Das.jpeg",
     "story": "Inspiring women globally through leadership, storytelling, and meaningful impact."
   },
   {
@@ -44,7 +44,7 @@
     "type": "woman",
     "name": "Ms. Nabomita Mazumdar",
     "role": "Founder",
-    "image": "/women/vol1/deepali-singh.jpg",
+    "image": "/Vol1 Images/Nabomita Mazumdar.jpeg",
     "story": "Championing diversity in tech and creating pathways for thousands of aspiring women developers."
   },
   {
@@ -57,7 +57,7 @@
     "type": "woman",
     "name": "Ms. Sharmila Divatia",
     "role": "Managing Director",
-    "image": "/women/vol1/rajini-menon.jpg",
+    "image": "/Vol1 Images/Sharmila Divatia.jpeg",
     "story": "Dedicating her life to education and women empowerment in rural communities across South India."
   },
   {
@@ -70,7 +70,7 @@
     "type": "woman",
     "name": "Ms. Shabia Walia",
     "role": "Founder",
-    "image": "/women/vol1/shabia-walia.jpg",
+    "image": "/Vol1 Images/Shabia Walia.jpeg",
     "story": "Leading sustainable business practices while mentoring over 500 women entrepreneurs in green tech."
   },
   {
@@ -83,7 +83,7 @@
     "type": "woman",
     "name": "Ms. Manisha Raisinghani",
     "role": "Co-Founder & CTO",
-    "image": "/women/vol1/seema-desai.jpg",
+    "image": "/Vol1 Images/Manisha Raisinghani.jpeg",
     "story": "Producing powerful stories that celebrate women's resilience and shape cultural conversations."
   },
   {
@@ -96,7 +96,7 @@
     "type": "woman",
     "name": "Ms. Jaya Vaidhyanathan",
     "role": "CEO",
-    "image": "/women/vol1/kavya-nair.jpg",
+    "image": "/Vol1 Images/Jaya Vaidhyanathan.jpeg",
     "story": "Revolutionizing affordable healthcare access for underserved populations across Asia and Africa."
   },
   {
@@ -109,7 +109,7 @@
     "type": "woman",
     "name": "Ms. Reema Sanghavi",
     "role": "Managing Director",
-    "image": "/women/vol1/reema-sanghavi.jpg",
+    "image": "/Vol1 Images/Reema Sanghavi.jpeg",
     "story": "Channeling capital toward women-led ventures and reshaping the venture capital landscape."
   },
   {
@@ -122,7 +122,7 @@
     "type": "woman",
     "name": "Ms. Tanul Mishra",
     "role": "Founder",
-    "image": "/women/vol1/tanul-mishra.jpg",
+    "image": "/Vol1 Images/Tanul Mishra.jpeg",
     "story": "Transforming education systems to ensure equal opportunities for girls across economically disadvantaged areas."
   },
   {
@@ -135,7 +135,7 @@
     "type": "woman",
     "name": "Ms. Neha Kanabar",
     "role": "Founder",
-    "image": "/women/vol1/neha-kanabar.jpg",
+    "image": "/Vol1 Images/Neha Kanabar.jpeg",
     "story": "Using art as a medium to amplify marginalized voices and build inclusive communities."
   },
   {
@@ -148,7 +148,7 @@
     "type": "woman",
     "name": "Ms. Shikha Pandey",
     "role": "Entrepreneur",
-    "image": "/women/vol1/shikha-pandey.jpg",
+    "image": "/Vol1 Images/Shikha Pandey.jpeg",
     "story": "Leading climate action initiatives and mobilizing communities toward sustainable living practices."
   },
   {
@@ -161,7 +161,7 @@
     "type": "woman",
     "name": "Ms. Shridaa Raheja",
     "role": "Founder",
-    "image": "/women/vol1/shridaa-raheja.jpg",
+    "image": "/Vol1 Images/Shridaa Raheja.jpeg",
     "story": "Building multiple ventures that create employment and opportunities for underrepresented communities."
   },
   {
@@ -174,7 +174,7 @@
     "type": "woman",
     "name": "Ms. Namrata Tatiya",
     "role": "Founder",
-    "image": "/women/vol1/namrata-tatiya.jpg",
+    "image": "/Vol1 Images/Namrata Tatiya.jpeg",
     "story": "Creating innovative solutions to address social challenges and drive inclusive growth."
   },
   {
@@ -187,7 +187,7 @@
     "type": "woman",
     "name": "Ms. Chandni Khan",
     "role": "Co-Founder",
-    "image": "/women/vol1/chandni-khan.jpg",
+    "image": "/Vol1 Images/Chandni Khan.jpeg",
     "story": "Creating innovative solutions to address social challenges and drive inclusive growth."
   },
   {
@@ -200,7 +200,7 @@
     "type": "woman",
     "name": "Ms. Neety Gupta",
     "role": "Proprietor",
-    "image": "/women/vol1/neety-gupta.jpg",
+    "image": "/Vol1 Images/Neety Gupta.jpeg",
     "story": "Creating innovative solutions to address social challenges and drive inclusive growth."
   },
   {
@@ -213,7 +213,7 @@
     "type": "woman",
     "name": "Ms. Namita Shah",
     "role": "Co-Founder",
-    "image": "/women/vol1/namita-shah.jpg",
+    "image": "/Vol1 Images/Namita Shah.jpeg",
     "story": "Creating innovative solutions to address social challenges and drive inclusive growth."
   },
   {
@@ -226,7 +226,7 @@
     "type": "woman",
     "name": "Dr. Sandhya Mayenkar",
     "role": "Founder",
-    "image": "/women/vol1/sandhya-mayenkar.jpg",
+    "image": "/Vol1 Images/Sandhya Mayenkar.jpeg",
     "story": "Creating innovative solutions to address social challenges and drive inclusive growth."
   },
   {
@@ -239,7 +239,7 @@
     "type": "woman",
     "name": "Ms. Vinika Chandwani",
     "role": "CEO",
-    "image": "/women/vol1/vinika-chandwani.jpg",
+    "image": "/Vol1 Images/Vinika Chandwani.jpeg",
     "story": "Creating innovative solutions to address social challenges and drive inclusive growth."
   },
   {
@@ -252,7 +252,7 @@
     "type": "woman",
     "name": "Ms. Anubha Singhai",
     "role": "Director",
-    "image": "/women/vol1/anubha-singhai.jpg",
+    "image": "/Vol1 Images/Anubha Singhai.jpeg",
     "story": "Creating innovative solutions to address social challenges and drive inclusive growth."
   },
   {
@@ -265,7 +265,7 @@
     "type": "woman",
     "name": "Ms. Ivy Manohara",
     "role": "Founder",
-    "image": "/women/vol1/ivy-manohara.jpg",
+    "image": "/Vol1 Images/Ivy Manohara.jpeg",
     "story": "Creating innovative solutions to address social challenges and drive inclusive growth."
   },
   {
