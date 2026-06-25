@@ -7,11 +7,11 @@ import { useState } from 'react';
 const NAV_ITEMS = [
     { label: 'HOME', href: '/' },
     { label: 'STORIES', href: '/stories' },
-    { label: 'GALLERY', href: '/gallery' },
     { label: 'VOLUME I', href: '/volumei' },
     { label: 'VOLUME II', href: '/volumeii' },
     { label: 'ABOUT', href: '/#authors' },
     { label: 'BILLENNIUM DIVAS', href: 'https://billenniumdivas.fund' },
+    { label: 'GALLERY', href: '/gallery' },
 ];
 
 export default function Navbar() {

@@ -6,12 +6,7 @@ import {
     Users,
     Star,
     ArrowRight,
-    FlipHorizontal,
 } from "lucide-react";
-import { BsAmazon, BsGooglePlay } from "react-icons/bs";
-import { GiEvilBook } from "react-icons/gi";
-import { PiNotionLogoBold } from "react-icons/pi";
-import { SiFlipkart } from "react-icons/si";
 
 const highlights = [
     {
@@ -28,6 +23,44 @@ const highlights = [
         icon: Star,
         title: "Actionable Inspiration",
         description: "Practical wisdom to help readers grow and lead.",
+    },
+];
+
+const stores = [
+    {
+        name: "Amazon",
+        icon: "https://images.icon-icons.com/159/PNG/256/amazon_22471.png",
+        Link: "https://www.amazon.in/dp/1639975594",
+    },
+    {
+        name: "Flipkart",
+        icon: "https://imgs.search.brave.com/fyeQbWYUttbhrsBUdfhpeWIYwO_WcfxCcqzVPcz4JO8/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly91eHdp/bmcuY29tL3dwLWNv/bnRlbnQvdGhlbWVz/L3V4d2luZy9kb3du/bG9hZC9icmFuZHMt/YW5kLXNvY2lhbC1t/ZWRpYS9mbGlwa2Fy/dC1pY29uLnBuZw",
+        Link: "https://www.flipkart.com/eves-against-odds/p/itm99bca2495d315",
+    },
+    {
+        name: "Apple Books",
+        icon: "https://imgs.search.brave.com/g9csYd0V-yXssza9h3WbPjF-JtF6iA9hf2UwHApOvMA/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9jZG4u/aWNvbnNjb3V0LmNv/bS9pY29uL2ZyZWUv/cG5nLTI1Ni9mcmVl/LWFwcGxlLWlib29r/cy1pY29uLXN2Zy1k/b3dubG9hZC1wbmct/NDkzMTQ2LnBuZz9m/PXdlYnAmdz0yNTY",
+        Link: "https://books.apple.com/us/book/eves-against-the-odds/id1580783269",
+    },
+    {
+        name: "Google Play",
+        icon: "https://imgs.search.brave.com/LhFmrdTW7iiPKtZcIqYohWEq1LvSmKxXzGoTHgYQMSY/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly91cGxv/YWQud2lraW1lZGlh/Lm9yZy93aWtpcGVk/aWEvY29tbW9ucy81/LzU1L0dvb2dsZV9Q/bGF5XzIwMTZfaWNv/bi5zdmc",
+        Link: "https://play.google.com/store/books/details/Eves_against_the_Odds_25_Inspiring_Women_Entrepren?id=Qis8EAAAQBAJ&hl=en_US&gl=US",
+    },
+    {
+        name: "Notion Press",
+        icon: "https://notionpress.com/favicon.ico",
+        Link: "https://notionpress.com/in/read/eves-against-the-odds/",
+    },
+    {
+        name: "Amazon Kindle",
+        icon: "https://imgs.search.brave.com/P3bBdb9cKIGClQLnRG-hIFLaLdEHzWTKaues6NT6MTs/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWcu/aWNvbnM4LmNvbS9w/bGFzdGljaW5lLzEy/MDAvYW1hem9uLWtp/bmRsZS5qcGc",
+        Link: "https://www.amazon.in/dp/1639975594/",
+    },
+    {
+        name: "Rakuten Kobo",
+        icon: "https://help.kobo.com/hc/article_attachments/25992131084311",
+        Link: "https://www.kobo.com/in/en/ebook/eves-against-the-odds/",
     },
 ];
 
@@ -181,7 +214,7 @@ export default function AboutBook() {
         </div>
 
         {/* Available Worldwide */}
-        <div className="relative mt-24">
+        <div id="available-worldwide" className="relative mt-24 scroll-mt-28">
             {/* Divider */}
             <div className="mb-10 flex items-center gap-4">
                 <div className="h-px flex-1 bg-gradient-to-r from-transparent to-white/10" />
@@ -191,37 +224,9 @@ export default function AboutBook() {
                 <div className="h-px flex-1 bg-gradient-to-l from-transparent to-white/10" />
             </div>
 
-            <div className="mx-auto max-w-5xl rounded-[32px] border border-white/10 bg-white/[0.03] p-8 backdrop-blur-xl">
+            <div className="mx-auto max-w-7xl rounded-[32px] border border-white/10 bg-white/[0.03] p-8 backdrop-blur-xl">
                 <div className="flex flex-wrap items-center justify-center gap-6">
-                    {[
-                        {
-                            name: "Amazon",
-                            icon: BsAmazon,
-                            Link: 'https://www.amazon.in/dp/1639975594'
-                        },
-                        {
-                            name: "Flipkart",
-                            icon: SiFlipkart,
-                            Link: 'https://www.flipkart.com/eves-against-odds/p/itm99bca2495d315'
-                        },
-                        {
-                            name: "Apple Books",
-                            icon: GiEvilBook,
-                            Link: 'https://books.apple.com/us/book/eves-against-the-odds/id1580783269'
-                        },
-                        {
-                            name: "Google Play",
-                            icon: BsGooglePlay,
-                            Link: 'https://play.google.com/store/books/details/Eves_against_the_Odds_25_Inspiring_Women_Entrepren?id=Qis8EAAAQBAJ&hl=en_US&gl=US'
-                        },
-                        {
-                            name: "Notion Press",
-                            icon: PiNotionLogoBold,
-                            Link: 'https://notionpress.com/in/read/eves-against-the-odds/'
-                        },
-                    ].map((store) => {
-                        const Icon = store.icon;
-
+                    {stores.map((store) => {
                         return (
                             <a
                                 key={store.name}
@@ -237,11 +242,13 @@ export default function AboutBook() {
 
                                 <div className="relative flex flex-col items-center gap-4">
                                     <div
-                                        className="flex h-16 w-16 items-center justify-center rounded-2xl bg-gradient-to-br from-pink-500/15 to-violet-500/15"
+                                        className="flex"
                                     >
-                                        <Icon
-                                            size={30}
-                                            className="text-pink-300 transition-all duration-500 group-hover:scale-110"
+                                        {/* eslint-disable-next-line @next/next/no-img-element */}
+                                        <img
+                                            src={store.icon}
+                                            alt=""
+                                            className="h-14 w-14 object-contain transition-all duration-500 group-hover:scale-110"
                                         />
                                     </div>
 
@@ -255,7 +262,7 @@ export default function AboutBook() {
                 </div>
 
                 {/* Bottom Text */}
-                <p className="mt-8 text-center text-sm text-white/50">
+                <p className="mt-8 text-center text-sm text-pink-400">
                     Available in print, digital, and audiobook formats across major platforms.
                 </p>
             </div>

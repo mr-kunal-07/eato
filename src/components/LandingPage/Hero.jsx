@@ -5,7 +5,8 @@ import {
     Users,
     BookOpen,
     Star,
-    Sparkles
+    Sparkles,
+    ShoppingBag,
 } from "lucide-react";
 
 const stats = [
@@ -32,6 +33,13 @@ const stats = [
 ];
 
 export default function Hero() {
+    const scrollToStores = () => {
+        document.getElementById("available-worldwide")?.scrollIntoView({
+            behavior: "smooth",
+            block: "start",
+        });
+    };
+
     return (
         <div>
             {/* Navbar - Fixed at top */}
@@ -66,6 +74,15 @@ export default function Hero() {
                         <br />
                         Who Turned Barriers Into Breakthroughs
                     </h2>
+
+                    <button
+                        type="button"
+                        onClick={scrollToStores}
+                        className="mt-8 inline-flex w-fit shrink-0 items-center gap-3 rounded-lg bg-gradient-to-r from-[#B8860B] via-[#D4AF37] to-[#F4D03F] px-6 py-3 text-md font-semibold uppercase tracking-[0.18em] text-black shadow-lg shadow-yellow-600/20 transition-all duration-300 hover:scale-105 hover:from-[#C89B3C] hover:via-[#E6C766] hover:to-[#FFD700] hover:shadow-yellow-500/40 cursor-pointer"
+                    >
+                        <ShoppingBag size={18} />
+                        Grab Your Copy
+                    </button>
                 </div>
             </section>
             <section className="relative flex  items-center justify-center overflow-hidden bg-linear-to-b from-[#161327] to-[#2b0f26]">
@@ -88,6 +105,15 @@ export default function Hero() {
                         <br />
                         Who Turned Barriers Into Breakthroughs
                     </h2>
+
+                    <button
+                        type="button"
+                        onClick={scrollToStores}
+                        className="mx-auto mb-4 inline-flex items-center gap-3 rounded-full bg-white px-6 py-3 text-xs font-semibold uppercase tracking-[0.16em] text-[#08070d] transition-all duration-300 hover:scale-105 hover:bg-pink-100 md:hidden"
+                    >
+                        <ShoppingBag size={16} />
+                        Grab Your Copy
+                    </button>
 
                     <section className="relative py-8 overflow-hidden ">
 

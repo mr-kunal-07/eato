@@ -45,7 +45,7 @@ const items = [
         "id": 6,
         "type": "quote",
         "quote": "Take decisions and then make them right.",
-        "author": "Mr. Ratan Tata"
+        "author": "Shre. Ratan Tata"
     },
 ];
 

@@ -57,7 +57,7 @@ export default function GalleryClient({ images }) {
                                 Photo Gallery
                             </p>
                             <h1 className="mt-4 font-serif text-4xl leading-tight md:text-6xl">
-                                Moments From EATO
+                                Moments of EVES AGAINST THE ODDS
                             </h1>
                         </div>
 
