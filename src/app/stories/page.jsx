@@ -184,7 +184,7 @@ export default function WomenStoriesPage() {
                                                 {/* Author Name */}
                                                 {item.author && (
                                                     <p className="mt-6 text-sm uppercase tracking-[0.25em] text-pink-300">
-                                                        — {item.author}
+                                                        ~ {item.author}
                                                     </p>
                                                 )}
                                             </div>

@@ -37,27 +37,27 @@ export default function Footer() {
                     </p>
 
                     <div className="mt-14 flex flex-wrap items-center justify-center gap-8 md:gap-12">
-                        <div className="flex h-24 w-48 items-center justify-center rounded-2xl border border-white/10 bg-white/5 p-6 backdrop-blur-sm transition-all duration-300 hover:border-pink-300/30 hover:bg-white/10">
+                        <div className="flex h-32 w-56 items-center justify-center rounded-2xl border border-white/10 bg-white/5 p-6 backdrop-blur-sm transition-all duration-300 hover:border-pink-300/30 hover:bg-white/10">
                             <img
-                                src="/patners/logo1.png"
+                                src="/patners/BSE.png"
                                 alt="Partner 1"
-                                className="max-h-12 w-auto object-contain opacity-80"
+                                className="rounded-sm w-auto object-contain"
                             />
                         </div>
 
-                        <div className="flex h-24 w-48 items-center justify-center rounded-2xl border border-white/10 bg-white/5 p-6 backdrop-blur-sm transition-all duration-300 hover:border-pink-300/30 hover:bg-white/10">
+                        <div className="flex h-32 w-56 items-center justify-center rounded-2xl border border-white/10 bg-white/5 p-6 backdrop-blur-sm transition-all duration-300 hover:border-pink-300/30 hover:bg-white/10">
                             <img
-                                src="/patners/logo2.png"
+                                src="/patners/PL.png"
                                 alt="Partner 2"
-                                className="max-h-12 w-auto object-contain opacity-80"
+                                className="rounded-sm w-auto object-contain"
                             />
                         </div>
 
-                        <div className="flex h-24 w-48 items-center justify-center rounded-2xl border border-white/10 bg-white/5 p-6 backdrop-blur-sm transition-all duration-300 hover:border-pink-300/30 hover:bg-white/10">
+                        <div className="flex h-32 w-56 items-center justify-center rounded-2xl border border-white/10 bg-white/5 p-6 backdrop-blur-sm transition-all duration-300 hover:border-pink-300/30 hover:bg-white/10">
                             <img
-                                src="/patners/logo3.png"
+                                src="/patners/MMB.png"
                                 alt="Partner 3"
-                                className="max-h-12 w-auto object-contain opacity-80"
+                                className="rounded-sm w-auto object-contain"
                             />
                         </div>
                     </div>

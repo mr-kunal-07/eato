@@ -7,9 +7,11 @@ import { useState } from 'react';
 const NAV_ITEMS = [
     { label: 'HOME', href: '/' },
     { label: 'STORIES', href: '/stories' },
+    { label: 'GALLERY', href: '/gallery' },
     { label: 'VOLUME I', href: '/volumei' },
     { label: 'VOLUME II', href: '/volumeii' },
     { label: 'ABOUT', href: '/#authors' },
+    { label: 'BILLENNIUM DIVAS', href: 'https://billenniumdivas.fund' },
 ];
 
 export default function Navbar() {
@@ -24,7 +26,7 @@ export default function Navbar() {
                         {/* Logo */}
                         <Link
                             href="/"
-                            className="text-xl font-semibold tracking-wide bg-gradient-to-r from-violet-300 via-pink-300 to-violet-300 bg-clip-text text-transparent"
+                            className="text-xl font-semibold tracking-wide bg-linear-to-r from-violet-300 via-pink-300 to-violet-300 bg-clip-text text-transparent"
                         >
                             EATO
                         </Link>
@@ -35,9 +37,15 @@ export default function Navbar() {
                                 <Link
                                     key={item.label}
                                     href={item.href}
-                                    className="px-5 py-2.5 rounded-full text-xs font-medium tracking-widest text-gray-300 hover:text-white hover:bg-white/10 transition-all duration-300"
+                                    className="group relative px-5 py-2.5 rounded-full text-xs font-medium tracking-widest text-gray-300 transition-all duration-300 hover:text-white hover:-translate-y-0.5"
                                 >
-                                    {item.label}
+                                    <span className="absolute inset-0 rounded-full bg-gradient-to-r from-violet-500/20 to-pink-500/20 opacity-0 blur-md transition-opacity duration-300 group-hover:opacity-100"></span>
+
+                                    <span className="relative z-10">
+                                        {item.label}
+                                    </span>
+
+                                    <span className="absolute bottom-1 left-1/2 h-[2px] w-0 -translate-x-1/2 rounded-full bg-gradient-to-r from-violet-400 to-pink-400 transition-all duration-300 group-hover:w-3/4"></span>
                                 </Link>
                             ))}
                         </div>

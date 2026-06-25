@@ -5,7 +5,7 @@
     "name": "Ms. Pabiben Rabari",
     "role": "Founder",
     "image": "/Vol1 Images/Pabiben Rabari.jpeg",
-    "story": "Built a successful startup empowering thousands of women entrepreneurs across India."
+    "story": "The real empowerment is the ability to think and choose. Use maximum creativity in our work, match the potential in ourselves to fulfil our dreams and get self-respect and recognition."
   },
   {
     "id": 2,
@@ -19,12 +19,13 @@
     "name": "Dr. Tarita Shankar",
     "role": "Founder",
     "image": "/Vol1 Images/Tarita Shankar.jpeg",
-    "story": "Turned challenges into opportunities and created a thriving business impacting countless lives."
+    "story": "Successful leaders see the opportunities in every difficulty, rather than the difficulty in every opportunity."
   },
   {
     "id": 4,
     "type": "quote",
-    "quote": "Every obstacle carries the seed of a greater opportunity."
+    "quote": "Women just know how to multitask, and this is exactly what leadership is about.",
+    "author": "Ms. Shweta Shalini"
   },
   {
     "id": 5,
@@ -32,25 +33,27 @@
     "name": "Dr. Ushy Mohan Das",
     "role": "Founder & Nucleus",
     "image": "/Vol1 Images/Ushy Mohan Das.jpeg",
-    "story": "Inspiring women globally through leadership, storytelling, and meaningful impact."
+    "story": "When your soul burns with purpose and passion, it's your duty to be burnt to ashes by it."
   },
   {
     "id": 6,
     "type": "quote",
-    "quote": "The future belongs to women who dare to dream bigger."
+    "quote": "Take decisions and then make them right.",
+    "author": "Mr. Ratan Tata"
   },
   {
     "id": 7,
     "type": "woman",
-    "name": "Ms. Nabomita Mazumdar",
+    "name": "Ms. Shabia Walia",
     "role": "Founder",
-    "image": "/Vol1 Images/Nabomita Mazumdar.jpeg",
-    "story": "Championing diversity in tech and creating pathways for thousands of aspiring women developers."
+    "image": "/Vol1 Images/Shabia Walia.jpeg",
+    "story": "I am the writer of my life film and I choose to be the hero rather than the victim. Life is too short to live by someone else’s expectations of you."
   },
   {
     "id": 8,
     "type": "quote",
-    "quote": "Innovation knows no gender, but opportunity often does—let's change that."
+    "quote": "Success isn't about how much money you make. It's about the difference you make in people's lives.",
+    "author": "Michelle Obama"
   },
   {
     "id": 9,
@@ -58,25 +61,27 @@
     "name": "Ms. Sharmila Divatia",
     "role": "Managing Director",
     "image": "/Vol1 Images/Sharmila Divatia.jpeg",
-    "story": "Dedicating her life to education and women empowerment in rural communities across South India."
+    "story": "I don’t know how to string the words “give” and “up” together. So you will find me bouncing from a supposed failure right back on the winners table in a short span of time."
   },
   {
     "id": 10,
     "type": "quote",
-    "quote": "When women rise, entire communities transform and flourish."
+    "quote": "Done is better than perfect.",
+    "author": "Sheryl Sandberg"
   },
   {
     "id": 11,
     "type": "woman",
-    "name": "Ms. Shabia Walia",
+    "name": "Ms. Nabomita Mazumdar",
     "role": "Founder",
-    "image": "/Vol1 Images/Shabia Walia.jpeg",
-    "story": "Leading sustainable business practices while mentoring over 500 women entrepreneurs in green tech."
+    "image": "/Vol1 Images/Nabomita Mazumdar.jpeg",
+    "story": "The humility to fail takes the fear out of it."
   },
   {
     "id": 12,
     "type": "quote",
-    "quote": "Sustainable success is built on the foundation of shared values and collective growth."
+    "quote": "Turn your wounds into wisdom.",
+    "author": "Oprah Winfrey"
   },
   {
     "id": 13,
@@ -84,240 +89,259 @@
     "name": "Ms. Manisha Raisinghani",
     "role": "Co-Founder & CTO",
     "image": "/Vol1 Images/Manisha Raisinghani.jpeg",
-    "story": "Producing powerful stories that celebrate women's resilience and shape cultural conversations."
+    "story": "Think Big - Achieve your next 3 years plan in the next 12 months."
   },
   {
     "id": 14,
     "type": "quote",
-    "quote": "Think Big - Achieve your next 3 years plan in the next 12 months."
+
+    "quote": "Everyone who's ever taken a shower has an idea. It's the person who gets out of the shower, dries off and does something about it who makes a difference.",
+    "author": "Nolan Bushnell"
   },
   {
     "id": 15,
     "type": "woman",
-    "name": "Ms. Jaya Vaidhyanathan",
-    "role": "CEO",
-    "image": "/Vol1 Images/Jaya Vaidhyanathan.jpeg",
-    "story": "Revolutionizing affordable healthcare access for underserved populations across Asia and Africa."
+    "name": "Ms. Reema Sanghavi",
+    "role": "Managing Director",
+    "image": "/Vol1 Images/Reema Sanghavi.jpeg",
+    "story": "Live to Inspire."
   },
   {
     "id": 16,
     "type": "quote",
-    "quote": "Health equity is not a luxury—it's a fundamental human right we must fight for."
+    "quote": "Everything is figureoutable.",
+    "author": "Marie Forleo"
   },
   {
     "id": 17,
     "type": "woman",
-    "name": "Ms. Reema Sanghavi",
-    "role": "Managing Director",
-    "image": "/Vol1 Images/Reema Sanghavi.jpeg",
-    "story": "Channeling capital toward women-led ventures and reshaping the venture capital landscape."
+    "name": "Ms. Jaya Vaidhyanathan",
+    "role": "CEO",
+    "image": "/Vol1 Images/Jaya Vaidhyanathan.jpeg",
+    "story": "If you never failed, it means you did not set the bar high enough. Dream big enough so that you fail, and have the courage to aim higher next time."
   },
   {
     "id": 18,
     "type": "quote",
-    "quote": "Investing in women isn't charity—it's the smartest business decision you'll make."
+    "quote": "If you think you're too small to have an impact, try going to bed with a mosquito.",
+    "author": "Anita Roddick"
   },
   {
     "id": 19,
     "type": "woman",
     "name": "Ms. Tanul Mishra",
-    "role": "Founder",
+    "role": "Founder, Afthonia Pvt. Ltd",
     "image": "/Vol1 Images/Tanul Mishra.jpeg",
-    "story": "Transforming education systems to ensure equal opportunities for girls across economically disadvantaged areas."
+    "story": "Trust my team wholeheartedly. I strongly believe in empowering my team and enabling them to become leaders themselves. One doesn’t need to be a founder or a CEO to be a leader."
   },
   {
     "id": 20,
     "type": "quote",
-    "quote": "Education is the most powerful weapon against limitations; it sets us truly free."
+    "quote": "Confidence and hard work are the best medicine to kill the disease called failure.",
+    "author": "Kiran Mazumdar-Shaw"
   },
   {
     "id": 21,
     "type": "woman",
-    "name": "Ms. Neha Kanabar",
-    "role": "Founder",
-    "image": "/Vol1 Images/Neha Kanabar.jpeg",
-    "story": "Using art as a medium to amplify marginalized voices and build inclusive communities."
+    "name": "Ms. Namrata Tatiya",
+    "role": "Founder, Acculegal Services Pvt Ltd.",
+    "image": "/Vol1 Images/Namrata Tatiya.jpeg",
+    "story": "The only thing that can help you win over all the evils is YOU. So make yourself the most valuable one as you have the power to achieve anything and everything. Just don’t stop."
   },
   {
     "id": 22,
     "type": "quote",
-    "quote": "Art transcends boundaries; through it, we speak the language of transformation."
+    "quote": "Don't you dare underestimate the power of your own instinct.",
+    "author": "Barbara Corcoran"
   },
   {
     "id": 23,
     "type": "woman",
-    "name": "Ms. Shikha Pandey",
-    "role": "Entrepreneur",
-    "image": "/Vol1 Images/Shikha Pandey.jpeg",
-    "story": "Leading climate action initiatives and mobilizing communities toward sustainable living practices."
+    "name": "Ms. Neha Kanabar",
+    "role": "Founder, Community Entrepreneur UNIMO Universe of Moms",
+    "image": "/Vol1 Images/Neha Kanabar.jpeg",
+    "story": "If beautiful things happen inside you, beautiful things will happen outside you."
   },
   {
     "id": 24,
     "type": "quote",
-    "quote": "The climate crisis demands courage, and courage is what every woman has in abundance."
+    "quote": "Rock bottom became the solid foundation on which I rebuilt my life.",
+    "author": "J.K. Rowling"
   },
   {
     "id": 25,
     "type": "woman",
     "name": "Ms. Shridaa Raheja",
-    "role": "Founder",
+    "role": "Founder, Doozy Designs",
     "image": "/Vol1 Images/Shridaa Raheja.jpeg",
-    "story": "Building multiple ventures that create employment and opportunities for underrepresented communities."
+    "story": "No one can give you your goals. No one can dig for you. This is your journey."
   },
   {
     "id": 26,
     "type": "quote",
-    "quote": "Empowerment is not a gift; it's a right that every woman must claim for herself and her community."
+    "quote": "Leadership is hard to define, and good leadership even harder. But if you can get people to follow you to the ends of the earth, you are a great leader.",
+    "author": "Indra Nooyi"
   },
   {
     "id": 27,
     "type": "woman",
-    "name": "Ms. Namrata Tatiya",
-    "role": "Founder",
-    "image": "/Vol1 Images/Namrata Tatiya.jpeg",
-    "story": "Creating innovative solutions to address social challenges and drive inclusive growth."
+    "name": "Ms. Shikha Pandey",
+    "role": "Entrepreneur, BECK Technology Ventures Pvt. Ltd",
+    "image": "/Vol1 Images/Shikha Pandey.jpeg",
+    "story": "Don't be limited. Be a LIMITED Edition."
   },
   {
     "id": 28,
     "type": "quote",
-    "quote": "Innovation is the bridge between challenges and opportunities; it is the key to unlocking a better future for all."
+    "quote": "Integrity is your biggest asset. Once you lose it, nothing else matters.",
+    "author": "Zia Mody"
   },
   {
     "id": 29,
     "type": "woman",
-    "name": "Ms. Chandni Khan",
+    "name": "Ms. Chandni Khan, Voice Of Slum",
     "role": "Co-Founder",
     "image": "/Vol1 Images/Chandni Khan.jpeg",
-    "story": "Creating innovative solutions to address social challenges and drive inclusive growth."
+    "story": "जब दो कूड़ा बीनने वाले बच्चे ये सब कर सकते है, तो कोई भी कुछ भी कर सकता है, बस जरुरत है एक पहल की!"
   },
   {
     "id": 30,
     "type": "quote",
-    "quote": "Innovation is the bridge between challenges and opportunities; it is the key to unlocking a better future for all."
+    "quote": "InnoSuccess is not about having all the answers; it's about having the courage to keep learning.",
+    "author": "Kirthiga Reddy"
   },
   {
     "id": 31,
     "type": "woman",
-    "name": "Ms. Neety Gupta",
-    "role": "Proprietor",
-    "image": "/Vol1 Images/Neety Gupta.jpeg",
-    "story": "Creating innovative solutions to address social challenges and drive inclusive growth."
+    "name": "Dr. Sandhya Mayenkar",
+    "role": "Founder, Skm Institute of Culinary Arts, Kini Supermarket, Skm Enterprises, Skm Asha Foundation",
+    "image": "/Vol1 Images/Sandhya Mayenkar.jpeg",
+    "story": " My story is very simple and I take pride in my work. The recognition I get is a morale booster for me as well as other small town women like me, who want to stand up on their own feet, rise out of their homes to build a better life."
   },
   {
     "id": 32,
     "type": "quote",
-    "quote": "Innovation is the bridge between challenges and opportunities; it is the key to unlocking a better future for all."
+    "quote": "Vision without action is merely a dream. Action without vision just passes the time. Vision with action can change the world.",
+    "author": "Sudha Murty"
   },
   {
     "id": 33,
     "type": "woman",
     "name": "Ms. Namita Shah",
-    "role": "Co-Founder",
+    "role": "Co-Founder, Presolv360",
     "image": "/Vol1 Images/Namita Shah.jpeg",
-    "story": "Creating innovative solutions to address social challenges and drive inclusive growth."
+    "story": "If you don't fail enough, you aren't aiming high enough."
   },
   {
     "id": 34,
     "type": "quote",
-    "quote": "Innovation is the bridge between challenges and opportunities; it is the key to unlocking a better future for all."
+    "quote": "There is no perfect time to start. If you believe in your idea, begin.",
+    "author": "Falguni Nayar"
   },
   {
     "id": 35,
     "type": "woman",
-    "name": "Dr. Sandhya Mayenkar",
-    "role": "Founder",
-    "image": "/Vol1 Images/Sandhya Mayenkar.jpeg",
-    "story": "Creating innovative solutions to address social challenges and drive inclusive growth."
+    "name": "Ms. Neety Gupta",
+    "role": "Proprietor,Neety Buildcon / Healing vibes by Neety.",
+    "image": "/Vol1 Images/Neety Gupta.jpeg",
+    "story": "Count your blessings, pray each day. Surrender to God’s will, he is the best judge."
   },
   {
     "id": 36,
     "type": "quote",
-    "quote": "Innovation is the bridge between challenges and opportunities; it is the key to unlocking a better future for all."
+    "quote": "Build a brand that solves a real problem, and customers will become your biggest advocates.",
+    "author": "Ghazal Alagh"
   },
   {
     "id": 37,
     "type": "woman",
     "name": "Ms. Vinika Chandwani",
-    "role": "CEO",
+    "role": "CEO, Vinrak Food Tech Pvt Ltd",
     "image": "/Vol1 Images/Vinika Chandwani.jpeg",
-    "story": "Creating innovative solutions to address social challenges and drive inclusive growth."
+    "story": "Everyone will tell you to grow fast, acquire funding. I feel success is about building a sustainable business and working for something you believe in and love doing. Focus on building a brand which people can trust and never give up."
   },
   {
     "id": 38,
     "type": "quote",
-    "quote": "Innovation is the bridge between challenges and opportunities; it is the key to unlocking a better future for all."
+    "quote": "Entrepreneurship is about persistence. Every setback teaches you something valuable.",
+    "author": "Upasana Taku"
   },
   {
     "id": 39,
     "type": "woman",
     "name": "Ms. Anubha Singhai",
-    "role": "Director",
+    "role": "Director, Phycon Healthcare Pvt Ltd.",
     "image": "/Vol1 Images/Anubha Singhai.jpeg",
-    "story": "Creating innovative solutions to address social challenges and drive inclusive growth."
+    "story": "Always put your 100 percent in whatever you do."
   },
   {
     "id": 40,
     "type": "quote",
-    "quote": "Innovation is the bridge between challenges and opportunities; it is the key to unlocking a better future for all."
+    "quote": "Never let society define the size of your dreams.",
+    "author": "Richa Kar"
   },
   {
     "id": 41,
     "type": "woman",
     "name": "Ms. Ivy Manohara",
-    "role": "Founder",
+    "role": "Founder, Filmapia",
     "image": "/Vol1 Images/Ivy Manohara.jpeg",
-    "story": "Creating innovative solutions to address social challenges and drive inclusive growth."
+    "story": "Dream Big. Work Hard. Be Patient."
   },
   {
     "id": 42,
     "type": "quote",
-    "quote": "Innovation is the bridge between challenges and opportunities; it is the key to unlocking a better future for all."
+    "quote": "Success comes to those who have the courage to dream and the determination to achieve it.",
+    "author": "Vandana Luthra"
   },
   {
     "id": 43,
     "type": "woman",
     "name": "Ms. Suvarna Bhat",
-    "role": "Founder & CEO",
-    "image": "/women/vol1/suvarna-bhat.jpg",
-    "story": "Creating innovative solutions to address social challenges and drive inclusive growth."
+    "role": "Founder & CEO, Bhoomiputri by Kadamba",
+    "image": "/Vol1 Images/Suvarna Bhat.jpeg",
+    "story": "When your presence is strongly felt, your purpose is fairly met. Reach more to serve more. Innovation is serendipity. Success doesn’t necessarily come from breakthrough innovation, but from flawless execution. A great strategy alone won’t win a game or a battle, the win comes from how good and effective the implementation is."
   },
   {
     "id": 44,
     "type": "quote",
-    "quote": "Innovation is the bridge between challenges and opportunities; it is the key to unlocking a better future for all."
+    "quote": "Innovation begins when you dare to question the ordinary.",
+    "author": "Suchi Mukherjee"
   },
   {
     "id": 45,
     "type": "woman",
     "name": "Dr. Megha Bhatt",
-    "role": "Founder",
-    "image": "/women/vol1/megha-bhatt.jpg",
-    "story": "Creating innovative solutions to address social challenges and drive inclusive growth."
+    "role": "Founder, SciKnowTech",
+    "image": "/Vol1 Images/Megha Bhatt.jpeg",
+    "story": "Exposure Leads To Exploration and Exploration to Innovation."
   },
   {
     "id": 46,
     "type": "quote",
-    "quote": "Innovation is the bridge between challenges and opportunities; it is the key to unlocking a better future for all."
+    "quote": "If you want to create change, start by solving one real problem at a time.",
+    "author": "Aditi Gupta"
   },
   {
     "id": 47,
     "type": "woman",
     "name": "Ms. Roli Pandey",
-    "role": "Founder",
-    "image": "/women/vol1/roli-pandey.jpg",
-    "story": "Creating innovative solutions to address social challenges and drive inclusive growth."
+    "role": "Founder, Zucate Mind Solutions Pvt Ltd",
+    "image": "/Vol1 Images/Roli Pandey.jpeg",
+    "story": "The key to your true potential is within you, and you realize it when your status quo is challenged; entrepreneurship does exactly that."
   },
   {
     "id": 48,
     "type": "quote",
-    "quote": "Innovation is the bridge between challenges and opportunities; it is the key to unlocking a better future for all."
+    "quote": "Don't wait for opportunities. Create them, own them, and make them count.",
+    "author": "Apurva Purohit"
   },
   {
     "id": 49,
     "type": "woman",
     "name": "Dr. Tejal Kanwar",
-    "role": "Founder",
-    "image": "/women/vol1/tejal-kanwar.jpg",
-    "story": "Creating innovative solutions to address social challenges and drive inclusive growth."
+    "role": "Founder, Kleinetics Datasports Pvt Ltd",
+    "image": "/Vol1 Images/Tejal Kanwar.jpeg",
+    "story": "Don’t merely own the idea, own the execution too and build on it."
   }
 ]
