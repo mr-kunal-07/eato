@@ -6,43 +6,46 @@ import Link from "next/link";
 
 const items = [
     {
-        type: "woman",
-        name: "Priya Sharma",
-        role: "Founder, InnovateHer",
-        image: "/women1.jpg",
-        story:
-            "Built a successful startup empowering thousands of women entrepreneurs.",
+        "id": 1,
+        "type": "woman",
+        "name": "Ms. Pabiben Rabari",
+        "role": "Founder",
+        "image": "/Vol1 Images/Pabiben Rabari.jpeg",
+        "story": "The real empowerment is the ability to think and choose. Use maximum creativity in our work, match the potential in ourselves to fulfil our dreams and get self-respect and recognition."
     },
     {
-        type: "quote",
-        quote:
-            "Success begins the moment you decide not to give up on yourself.",
+        "id": 2,
+        "type": "quote",
+        "quote": "Build Value and the Valuation will Follow.",
+        "author": "Mr. Bhavesh Kothari"
     },
     {
-        type: "woman",
-        name: "Ananya Patel",
-        role: "CEO, GrowthNest",
-        image: "/women2.jpg",
-        story:
-            "Turned challenges into opportunities and created a thriving business.",
+        "id": 3,
+        "type": "woman",
+        "name": "Dr. Tarita Shankar",
+        "role": "Founder",
+        "image": "/Vol1 Images/Tarita Shankar.jpeg",
+        "story": "Successful leaders see the opportunities in every difficulty, rather than the difficulty in every opportunity."
     },
     {
-        type: "quote",
-        quote:
-            "Every obstacle carries the seed of a greater opportunity.",
+        "id": 4,
+        "type": "quote",
+        "quote": "Women just know how to multitask, and this is exactly what leadership is about.",
+        "author": "Ms. Shweta Shalini"
     },
     {
-        type: "woman",
-        name: "Meera Kapoor",
-        role: "Author & Entrepreneur",
-        image: "/women3.jpg",
-        story:
-            "Inspiring women globally through leadership, storytelling, and impact.",
+        "id": 5,
+        "type": "woman",
+        "name": "Dr. Ushy Mohan Das",
+        "role": "Founder & Nucleus",
+        "image": "/Vol1 Images/Ushy Mohan Das.jpeg",
+        "story": "When your soul burns with purpose and passion, it's your duty to be burnt to ashes by it."
     },
     {
-        type: "quote",
-        quote:
-            "The future belongs to women who dare to dream bigger.",
+        "id": 6,
+        "type": "quote",
+        "quote": "Take decisions and then make them right.",
+        "author": "Mr. Ratan Tata"
     },
 ];
 
@@ -96,10 +99,9 @@ export default function WomenStoriesGrid() {
                                             alt={item.name}
                                             width={600}
                                             height={700}
-                                            className="h-85 w-full object-cover transition-transform duration-700 group-hover:scale-105"
+                                            className="h-85 w-full object-cover object-top transition-transform duration-700 group-hover:scale-105"
                                         />
 
-                                        <div className="absolute inset-0 bg-linear-to-t from-[#08070d] via-transparent to-transparent" />
 
                                     </div>
 
@@ -133,7 +135,15 @@ export default function WomenStoriesGrid() {
                                         &quot;{item.quote}&quot;
                                     </p>
 
-                                    <div className="mt-8 h-px w-20 bg-pink-400/40" />
+                                    {/* Divider Line */}
+                                    <div className="mt-10 h-px w-24 bg-linear-to-r from-pink-400 to-transparent" />
+
+                                    {/* Author Name */}
+                                    {item.author && (
+                                        <p className="mt-6 text-sm uppercase tracking-[0.25em] text-pink-300">
+                                            ~ {item.author}
+                                        </p>
+                                    )}
 
                                 </div>
                             )}
