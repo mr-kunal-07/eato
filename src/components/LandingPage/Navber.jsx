@@ -24,8 +24,7 @@ export default function Navbar() {
                         {/* Logo */}
                         <Link
                             href="/"
-                            className="text-xl font-semibold tracking-wide bg-gradient-to-r from-violet-300 via-pink-300 to-violet-300 bg-clip-text text-transparent
-              "
+                            className="text-xl font-semibold tracking-wide bg-gradient-to-r from-violet-300 via-pink-300 to-violet-300 bg-clip-text text-transparent"
                         >
                             EATO
                         </Link>
@@ -88,26 +87,7 @@ export default function Navbar() {
 
                 {/* Mobile Menu */}
                 <div
-                    className={`
-                    md:hidden
-                    absolute
-                    left-0
-                    right-0
-                    top-full
-                    mt-3
-                    overflow-hidden
-                    rounded-3xl
-                    border
-                    border-white/20
-                    bg-white/10
-                    backdrop-blur-xl
-                    transition-all
-                    duration-300
-                ${isOpen
-                            ? 'max-h-96 p-4 opacity-100'
-                            : 'max-h-0 p-0 opacity-0 border-transparent'
-                        }
-`}
+                    className={`md:hidden absolute left-0 right-0 top-full mt-3 overflow-hidden rounded-3xl border border-white/20 bg-white/10 backdrop-blur-xl transition-all duration-300 ${isOpen ? 'max-h-96 p-4 opacity-100' : 'max-h-0 p-0 opacity-0 border-transparent'}`}
                 >
                     <div className="flex flex-col gap-2">
                         {NAV_ITEMS.map((item) => (
@@ -115,17 +95,7 @@ export default function Navbar() {
                                 key={item.label}
                                 href={item.href}
                                 onClick={() => setIsOpen(false)}
-                                className="
-                  px-4
-                  py-3
-                  rounded-xl
-                  text-sm
-                  font-medium
-                  text-gray-300
-                  hover:text-white
-                  hover:bg-white/10
-                  transition-all
-                "
+                                className="px-4 py-3 rounded-xl text-sm font-medium text-gray-300 hover:text-white hover:bg-white/10 transition-all"
                             >
                                 {item.label}
                             </Link>
@@ -134,18 +104,7 @@ export default function Navbar() {
                         <Link
                             href="/get-book"
                             onClick={() => setIsOpen(false)}
-                            className="
-                mt-2
-                text-center
-                px-6
-                py-3
-                rounded-xl
-                bg-gradient-to-r
-                from-violet-600
-                to-pink-500
-                text-white
-                font-semibold
-              "
+                            className="mt-2 text-center px-6 py-3 rounded-xl bg-gradient-to-r from-violet-600 to-pink-500 text-white font-semibold"
                         >
                             Get the Book
                         </Link>

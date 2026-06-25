@@ -100,24 +100,7 @@ export default function Hero() {
                                     return (
                                         <div
                                             key={index}
-                                            className="
-                                    group
-                                    relative
-                                    flex
-                                    flex-col
-                                    items-center
-                                    justify-center
-                                    text-center
-                                    px-6
-                                    py-10
-                                    md:py-14
-                                    border-b
-                                    lg:border-b-0
-                                    border-white/10
-                                    transition-all
-                                    duration-500
-                                    hover:bg-white/[0.02]
-                                "
+                                            className="group relative flex flex-col items-center justify-center text-center px-6 py-10 md:py-14 border-b lg:border-b-0 border-white/10 transition-all duration-500 hover:bg-white/[0.02]"
                                         >
                                             {/* Vertical Borders */}
                                             {index !== stats.length - 1 && (
@@ -126,29 +109,12 @@ export default function Hero() {
 
                                             {/* Icon Glow */}
                                             <div
-                                                className="
-                                        relative
-                                        mb-5
-                                        transition-all
-                                        duration-500
-                                        group-hover:scale-110
-                                    "
+                                                className="relative mb-5 transition-all duration-500 group-hover:scale-110"
                                             >
                                                 <div className="absolute inset-0 bg-white/10 blur-xl rounded-full" />
 
                                                 <div
-                                                    className="
-                                            relative
-                                            w-12
-                                            h-12
-                                            flex
-                                            items-center
-                                            justify-center
-                                            rounded-full
-                                            border
-                                            border-white/10
-                                            bg-white/[0.03]
-                                        "
+                                                    className="relative w-12 h-12 flex items-center justify-center rounded-full border border-white/10 bg-white/[0.03]"
                                                 >
                                                     <Icon
                                                         size={22}
@@ -160,34 +126,14 @@ export default function Hero() {
 
                                             {/* Number */}
                                             <h3
-                                                className="
-                                        text-white
-                                        text-3xl
-                                        sm:text-4xl
-                                        md:text-5xl
-                                        font-serif
-                                        font-bold
-                                        leading-none
-                                        tracking-tight
-                                        transition-transform
-                                        duration-500
-                                        group-hover:scale-105
-                                    "
+                                                className="text-white text-3xl sm:text-4xl md:text-5xl font-serif font-bold leading-none tracking-tight transition-transform duration-500 group-hover:scale-105"
                                             >
                                                 {item.value}
                                             </h3>
 
                                             {/* Label */}
                                             <p
-                                                className="
-                                        mt-3
-                                        text-[10px]
-                                        sm:text-xs
-                                        tracking-[0.25em]
-                                        uppercase
-                                        text-white/50
-                                        leading-relaxed
-                                    "
+                                                className="mt-3 text-[10px] sm:text-xs tracking-[0.25em] uppercase text-white/50 leading-relaxed"
                                             >
                                                 {item.label}
                                             </p>

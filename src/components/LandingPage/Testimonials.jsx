@@ -98,20 +98,7 @@ export default function Testimonials() {
                         {testimonials.map((item, index) => (
                             <SwiperSlide key={index}>
                                 <div
-                                    className="
-                                        h-full
-                                        rounded-4xl
-                                        border
-                                        border-white/10
-                                        bg-white/4
-                                        p-8
-                                        backdrop-blur-xl
-                                        transition-all
-                                        duration-500
-                                        hover:-translate-y-2
-                                        hover:border-pink-400/30
-                                        hover:bg-white/6
-                                    "
+                                    className="h-full rounded-4xl border border-white/10 bg-white/4 p-8 backdrop-blur-xl transition-all duration-500 hover:-translate-y-2 hover:border-pink-400/30 hover:bg-white/6"
                                 >
                                     <div className="text-6xl leading-none text-pink-300">
                                         &quot;

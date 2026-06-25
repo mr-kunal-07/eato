@@ -90,21 +90,7 @@ export default function AuthorsSection() {
                     {authors.map((author, index) => (
                         <div
                             key={index}
-                            className="
-                                group
-                                overflow-hidden
-                                rounded-[36px]
-                                border
-                                border-white/10
-                                bg-white/[0.03]
-                                backdrop-blur-xl
-                                transition-all
-                                duration-500
-                                hover:-translate-y-2
-                                hover:border-pink-400/30
-                                hover:bg-white/[0.05]
-                                hover:shadow-[0_30px_80px_rgba(236,72,153,0.12)]
-                            "
+                            className="group overflow-hidden rounded-[36px] border border-white/10 bg-white/[0.03] backdrop-blur-xl transition-all duration-500 hover:-translate-y-2 hover:border-pink-400/30 hover:bg-white/[0.05] hover:shadow-[0_30px_80px_rgba(236,72,153,0.12)]"
                         >
                             {/* Image Section */}
                             <div className="relative overflow-hidden">
@@ -138,23 +124,7 @@ export default function AuthorsSection() {
                                         href={author.linkedin}
                                         target="_blank"
                                         rel="noopener noreferrer"
-                                        className="
-                                            flex
-                                            h-12
-                                            w-12
-                                            items-center
-                                            justify-center
-                                            rounded-full
-                                            border
-                                            border-white/10
-                                            bg-white/5
-                                            text-white/70
-                                            transition-all
-                                            duration-300
-                                            hover:border-pink-400/30
-                                            hover:bg-pink-500/10
-                                            hover:text-pink-300
-                                        "
+                                        className="flex h-12 w-12 items-center justify-center rounded-full border border-white/10 bg-white/5 text-white/70 transition-all duration-300 hover:border-pink-400/30 hover:bg-pink-500/10 hover:text-pink-300"
                                     >
                                         <FaLinkedin size={20} />
                                     </Link>
@@ -187,24 +157,7 @@ export default function AuthorsSection() {
                                             href={author.website}
                                             target="_blank"
                                             rel="noopener noreferrer"
-                                            className="
-                                                inline-flex
-                                                items-center
-                                                gap-2
-                                                rounded-full
-                                                border
-                                                border-white/10
-                                                bg-white/5
-                                                px-5
-                                                py-3
-                                                text-sm
-                                                text-white/70
-                                                transition-all
-                                                duration-300
-                                                hover:border-pink-400/30
-                                                hover:bg-white/10
-                                                hover:text-white
-                                            "
+                                            className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-5 py-3 text-sm text-white/70 transition-all duration-300 hover:border-pink-400/30 hover:bg-white/10 hover:text-white"
                                         >
                                             <FaGlobe />
                                             Website
@@ -212,24 +165,7 @@ export default function AuthorsSection() {
 
                                         <a
                                             href={`mailto:${author.email}`}
-                                            className="
-                                                inline-flex
-                                                items-center
-                                                gap-2
-                                                rounded-full
-                                                border
-                                                border-white/10
-                                                bg-white/5
-                                                px-5
-                                                py-3
-                                                text-sm
-                                                text-white/70
-                                                transition-all
-                                                duration-300
-                                                hover:border-pink-400/30
-                                                hover:bg-white/10
-                                                hover:text-white
-                                            "
+                                            className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-5 py-3 text-sm text-white/70 transition-all duration-300 hover:border-pink-400/30 hover:bg-white/10 hover:text-white"
                                         >
                                             <FaEnvelope />
                                             Email

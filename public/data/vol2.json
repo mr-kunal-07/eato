@@ -1,118 +1,118 @@
 [
   {
-    "id": 26,
+    "id": 1,
     "type": "woman",
-    "name": "Sanya Kapoor",
-    "role": "Sports Champion & Coach",
-    "image": "/women/vol2/sanya-kapoor.jpg",
-    "category": "Sports",
+    "name": "Ms. Vineeta Singh",
+    "role": "Co-Founder & CEO",
+    "image": "/Vol1 Images/1.png",
     "story": "Breaking barriers in sports and mentoring young athletes to pursue excellence and leadership."
   },
   {
-    "id": 27,
+    "id": 2,
     "type": "quote",
-    "quote": "Champions are not born; they are built through resilience, dedication, and self-belief."
+    "quote": "Champions are not born; they are built through resilience, dedication, and self-belief.",
+    "author": "Sanya Kapoor"
   },
   {
-    "id": 28,
+    "id": 3,
     "type": "woman",
-    "name": "Mira Patel",
+    "name": "Ms. Divya Momaya",
     "role": "Fashion Entrepreneur",
     "image": "/women/vol2/mira-patel.jpg",
-    "category": "Fashion",
     "story": "Creating sustainable fashion while preserving traditional crafts and employing rural artisans."
   },
   {
-    "id": 29,
+    "id": 4,
     "type": "quote",
-    "quote": "True style is when your choices reflect your values and impact the world positively."
+    "quote": "True style is when your choices reflect your values and impact the world positively.",
+    "author": "Mira Patel"
   },
   {
-    "id": 30,
+    "id": 5,
     "type": "woman",
     "name": "Tara Deshmukh",
     "role": "Data Scientist & AI Researcher",
     "image": "/women/vol2/tara-deshmukh.jpg",
-    "category": "Technology",
     "story": "Pioneering ethical AI research and advocating for responsible technology implementation globally."
   },
   {
-    "id": 31,
+    "id": 6,
     "type": "quote",
-    "quote": "Technology shapes our future; we must ensure it's designed with ethics and inclusion at its core."
+    "quote": "Technology shapes our future; we must ensure it's designed with ethics and inclusion at its core.",
+    "author": "Tara Deshmukh"
   },
   {
-    "id": 32,
+    "id": 7,
     "type": "woman",
     "name": "Priyanka Mishra",
     "role": "Food Security Innovator",
     "image": "/women/vol2/priyanka-mishra.jpg",
-    "category": "Agriculture",
     "story": "Revolutionizing farming practices to ensure food security and empower small-scale farmers."
   },
   {
-    "id": 33,
+    "id": 8,
     "type": "quote",
-    "quote": "Feeding the world begins with respecting and supporting those who grow our food."
+    "quote": "Feeding the world begins with respecting and supporting those who grow our food.",
+    "author": "Priyanka Mishra"
   },
   {
-    "id": 34,
+    "id": 9,
     "type": "woman",
     "name": "Kavita Iyer",
     "role": "Mental Health Advocate",
     "image": "/women/vol2/kavita-iyer.jpg",
-    "category": "Wellness",
     "story": "Destigmatizing mental health and building accessible support systems for vulnerable populations."
   },
   {
-    "id": 35,
+    "id": 10,
     "type": "quote",
-    "quote": "Mental wellness is not a luxury; it's the foundation of a thriving society."
+    "quote": "Mental wellness is not a luxury; it's the foundation of a thriving society.",
+    "author": "Kavita Iyer"
   },
   {
-    "id": 36,
+    "id": 11,
     "type": "woman",
     "name": "Nidhi Agarwal",
     "role": "Legal Rights Advocate",
     "image": "/women/vol2/nidhi-agarwal.jpg",
-    "category": "Law",
     "story": "Fighting for justice and legal equality through innovative advocacy and community education."
   },
   {
-    "id": 37,
+    "id": 12,
     "type": "quote",
-    "quote": "Justice delayed is justice denied; let's rewrite the rules together."
+    "quote": "Justice delayed is justice denied; let's rewrite the rules together.",
+    "author": "Nidhi Agarwal"
   },
   {
-    "id": 38,
+    "id": 13,
     "type": "woman",
     "name": "Sneha Bhat",
     "role": "Robotics Engineer",
     "image": "/women/vol2/sneha-bhat.jpg",
-    "category": "STEM",
     "story": "Developing cutting-edge robotic solutions while inspiring the next generation of women engineers."
   },
   {
-    "id": 39,
+    "id": 14,
     "type": "quote",
-    "quote": "The future is built by those brave enough to engineer it; be that person."
+    "quote": "The future is built by those brave enough to engineer it; be that person.",
+    "author": "Sneha Bhat"
   },
   {
-    "id": 40,
+    "id": 15,
     "type": "woman",
     "name": "Anjana Reddy",
     "role": "Tourism & Heritage Conservationist",
     "image": "/women/vol2/anjana-reddy.jpg",
-    "category": "Culture",
     "story": "Preserving cultural heritage while creating sustainable tourism opportunities for local communities."
   },
   {
-    "id": 41,
+    "id": 16,
     "type": "quote",
-    "quote": "Heritage connects us to our roots; preserving it ensures our children know their identity."
+    "quote": "Heritage connects us to our roots; preserving it ensures our children know their identity.",
+    "author": "Anjana Reddy"
   },
   {
-    "id": 42,
+    "id": 17,
     "type": "woman",
     "name": "Lakshmi Sinha",
     "role": "Water Management Expert",
@@ -121,59 +121,23 @@
     "story": "Implementing innovative water conservation strategies impacting millions in water-scarce regions."
   },
   {
-    "id": 43,
+    "id": 18,
     "type": "quote",
-    "quote": "Water is life; protecting it is our responsibility to future generations."
+    "quote": "Water is life; protecting it is our responsibility to future generations.",
+    "author": "Lakshmi Sinha"
   },
   {
-    "id": 44,
+    "id": 19,
     "type": "woman",
     "name": "Drishti Sharma",
     "role": "Supply Chain Innovator",
     "image": "/women/vol2/drishti-sharma.jpg",
-    "category": "Business",
     "story": "Revolutionizing supply chains with technology while ensuring fair wages and ethical practices."
   },
   {
-    "id": 45,
+    "id": 20,
     "type": "quote",
-    "quote": "A truly modern supply chain puts people and planet before profit margins."
-  },
-  {
-    "id": 46,
-    "type": "woman",
-    "name": "Shruti Malhotra",
-    "role": "Publishing House Director",
-    "image": "/women/vol2/shruti-malhotra.jpg",
-    "category": "Publishing",
-    "story": "Amplifying diverse voices and stories that have been historically marginalized in publishing."
-  },
-  {
-    "id": 47,
-    "type": "quote",
-    "quote": "Publishing is power; let's ensure every voice gets heard and celebrated."
-  },
-  {
-    "id": 48,
-    "type": "woman",
-    "name": "Pragya Singh",
-    "role": "Disaster Response Coordinator",
-    "image": "/women/vol2/pragya-singh.jpg",
-    "category": "Humanitarian",
-    "story": "Leading emergency response efforts and building community resilience in disaster-prone areas."
-  },
-  {
-    "id": 49,
-    "type": "quote",
-    "quote": "In crisis, compassion and courage matter more than anything else."
-  },
-  {
-    "id": 50,
-    "type": "woman",
-    "name": "Anusha Verma",
-    "role": "Urban Planner & Architect",
-    "image": "/women/vol2/anusha-verma.jpg",
-    "category": "Architecture",
-    "story": "Designing inclusive, sustainable cities that prioritize accessibility and community well-being."
+    "quote": "A truly modern supply chain puts people and planet before profit margins.",
+    "author": "Drishti Sharma"
   }
 ]

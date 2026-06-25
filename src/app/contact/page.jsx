@@ -1,9 +1,48 @@
 "use client";
 
 import Link from "next/link";
+import { useState } from "react";
 import { FaArrowLeft, FaLinkedin, FaPhoneAlt, FaUser, FaEnvelope } from "react-icons/fa";
 
 export default function ContactSection() {
+    const [status, setStatus] = useState({ type: "", message: "" });
+    const [isSubmitting, setIsSubmitting] = useState(false);
+
+    const handleSubmit = async (event) => {
+        event.preventDefault();
+        setIsSubmitting(true);
+        setStatus({ type: "", message: "" });
+
+        const form = event.currentTarget;
+        const formData = new FormData(form);
+        const payload = Object.fromEntries(formData.entries());
+
+        try {
+            const response = await fetch("/api/contact", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json",
+                },
+                body: JSON.stringify(payload),
+            });
+            const result = await response.json();
+
+            if (!response.ok) {
+                throw new Error(result.message || "Failed to submit your interest.");
+            }
+
+            form.reset();
+            setStatus({ type: "success", message: result.message });
+        } catch (error) {
+            setStatus({
+                type: "error",
+                message: error.message || "Failed to submit your interest.",
+            });
+        } finally {
+            setIsSubmitting(false);
+        }
+    };
+
     return (
         <section
             id="contact"
@@ -13,18 +52,7 @@ export default function ContactSection() {
             <div className="relative z-20 mx-auto max-w-7xl px-6 mb-8">
                 <Link
                     href="/"
-                    className="
-                        inline-flex
-                        items-center
-                        gap-2
-                        text-sm
-                        uppercase
-                        tracking-[0.3em]
-                        text-white/70
-                        hover:text-white
-                        transition-colors
-                        duration-300
-                    "
+                    className="inline-flex items-center gap-2 text-sm uppercase tracking-[0.3em] text-white/70 hover:text-white transition-colors duration-300"
                 >
                     <FaArrowLeft size={16} />
                     Back to Home
@@ -87,17 +115,9 @@ export default function ContactSection() {
 
                     {/* Form */}
                     <div
-                        className="
-                            rounded-[36px]
-                            border
-                            border-white/10
-                            bg-white/3  
-                            p-8
-                            backdrop-blur-xl
-                            md:p-10
-                        "
+                        className="rounded-[36px] border border-white/10 bg-white/3 p-8 backdrop-blur-xl md:p-10"
                     >
-                        <form className="space-y-6">
+                        <form className="space-y-6" onSubmit={handleSubmit}>
                             {/* Name */}
                             <div>
                                 <label className="mb-3 block text-sm text-white/70">
@@ -108,22 +128,11 @@ export default function ContactSection() {
                                     <FaUser className="absolute left-4 top-1/2 -translate-y-1/2 text-pink-300" />
 
                                     <input
+                                        name="name"
                                         type="text"
                                         placeholder="Enter your full name"
-                                        className="
-                                            w-full
-                                            rounded-2xl
-                                            border
-                                            border-white/10
-                                            bg-white/5
-                                            py-4
-                                            pl-12
-                                            pr-4
-                                            text-white
-                                            outline-none
-                                            transition-all
-                                            focus:border-pink-400/40
-                                        "
+                                        required
+                                        className="w-full rounded-2xl border border-white/10 bg-white/5 py-4 pl-12 pr-4 text-white outline-none transition-all focus:border-pink-400/40"
                                     />
                                 </div>
                             </div>
@@ -138,21 +147,11 @@ export default function ContactSection() {
                                     <FaEnvelope className="absolute left-4 top-1/2 -translate-y-1/2 text-pink-300" />
 
                                     <input
+                                        name="email"
                                         type="email"
                                         placeholder="Enter your email"
-                                        className="
-                                            w-full
-                                            rounded-2xl
-                                            border
-                                            border-white/10
-                                            bg-white/5
-                                            py-4
-                                            pl-12
-                                            pr-4
-                                            text-white
-                                            outline-none
-                                            focus:border-pink-400/40
-                                        "
+                                        required
+                                        className="w-full rounded-2xl border border-white/10 bg-white/5 py-4 pl-12 pr-4 text-white outline-none focus:border-pink-400/40"
                                     />
                                 </div>
                             </div>
@@ -167,21 +166,11 @@ export default function ContactSection() {
                                     <FaPhoneAlt className="absolute left-4 top-1/2 -translate-y-1/2 text-pink-300" />
 
                                     <input
+                                        name="phone"
                                         type="tel"
                                         placeholder="+91 9876543210"
-                                        className="
-                                            w-full
-                                            rounded-2xl
-                                            border
-                                            border-white/10
-                                            bg-white/5
-                                            py-4
-                                            pl-12
-                                            pr-4
-                                            text-white
-                                            outline-none
-                                            focus:border-pink-400/40
-                                        "
+                                        required
+                                        className="w-full rounded-2xl border border-white/10 bg-white/5 py-4 pl-12 pr-4 text-white outline-none focus:border-pink-400/40"
                                     />
                                 </div>
                             </div>
@@ -196,21 +185,11 @@ export default function ContactSection() {
                                     <FaLinkedin className="absolute left-4 top-1/2 -translate-y-1/2 text-pink-300" />
 
                                     <input
+                                        name="linkedin"
                                         type="url"
                                         placeholder="https://linkedin.com/in/..."
-                                        className="
-                                            w-full
-                                            rounded-2xl
-                                            border
-                                            border-white/10
-                                            bg-white/5
-                                            py-4
-                                            pl-12
-                                            pr-4
-                                            text-white
-                                            outline-none
-                                            focus:border-pink-400/40
-                                        "
+                                        required
+                                        className="w-full rounded-2xl border border-white/10 bg-white/5 py-4 pl-12 pr-4 text-white outline-none focus:border-pink-400/40"
                                     />
                                 </div>
                             </div>
@@ -222,20 +201,11 @@ export default function ContactSection() {
                                 </label>
 
                                 <input
+                                    name="business"
                                     type="text"
                                     placeholder="Your company name"
-                                    className="
-                                        w-full
-                                        rounded-2xl
-                                        border
-                                        border-white/10
-                                        bg-white/5
-                                        px-4
-                                        py-4
-                                        text-white
-                                        outline-none
-                                        focus:border-pink-400/40
-                                    "
+                                    required
+                                    className="w-full rounded-2xl border border-white/10 bg-white/5 px-4 py-4 text-white outline-none focus:border-pink-400/40"
                                 />
                             </div>
 
@@ -248,29 +218,32 @@ export default function ContactSection() {
                                 </label>
 
                                 <textarea
+                                    name="message"
                                     rows={5}
                                     placeholder="Tell us what makes your story unique and inspiring..."
-                                    className="
-                                        w-full
-                                        rounded-2xl
-                                        border
-                                        border-white/10
-                                        bg-white/5
-                                        px-4
-                                        py-4
-                                        text-white
-                                        outline-none
-                                        focus:border-pink-400/40
-                                    "
+                                    required
+                                    className="w-full rounded-2xl border border-white/10 bg-white/5 px-4 py-4 text-white outline-none focus:border-pink-400/40"
                                 />
                             </div>
+
+                            {status.message && (
+                                <p
+                                    className={`rounded-2xl border px-4 py-3 text-sm ${status.type === "success"
+                                        ? "border-emerald-400/30 bg-emerald-400/10 text-emerald-200"
+                                        : "border-red-400/30 bg-red-400/10 text-red-200"
+                                        }`}
+                                >
+                                    {status.message}
+                                </p>
+                            )}
 
                             {/* Submit */}
                             <button
                                 type="submit"
-                                className="w-full rounded-2xl bg-linear-to-r from-violet-500/70 to-purple-500/20 px-8 py-4 font-medium text-white transition-all duration-300 hover:scale-[1.02]"
+                                disabled={isSubmitting}
+                                className="w-full rounded-2xl bg-linear-to-r from-violet-500/70 to-purple-500/20 px-8 py-4 font-medium text-white transition-all duration-300 hover:scale-[1.02] disabled:cursor-not-allowed disabled:opacity-60 disabled:hover:scale-100"
                             >
-                                Submit Your Intrest
+                                {isSubmitting ? "Submitting..." : "Submit Your Interest"}
                             </button>
                         </form>
 

@@ -119,15 +119,7 @@ export default function Footer() {
                                 href="https://www.linkedin.com/company/evesagainsttheodds/"
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                className="
-                                    flex
-                                    items-center
-                                    gap-3
-                                    text-white/60
-                                    transition-colors
-                                    duration-300
-                                    hover:text-pink-300
-                                "
+                                className="flex items-center gap-3 text-white/60 transition-colors duration-300 hover:text-pink-300"
                             >
                                 <FaLinkedin size={20} />
                                 <span>LinkedIn</span>
@@ -137,15 +129,7 @@ export default function Footer() {
                                 href="https://www.facebook.com/evesagainsttheodds"
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                className="
-                                    flex
-                                    items-center
-                                    gap-3
-                                    text-white/60
-                                    transition-colors
-                                    duration-300
-                                    hover:text-pink-300
-                                "
+                                className="flex items-center gap-3 text-white/60 transition-colors duration-300 hover:text-pink-300"
                             >
                                 <FaFacebook size={20} />
                                 <span>Facebook</span>
@@ -157,26 +141,7 @@ export default function Footer() {
                                 href="https://billenniumdivas.vercel.app/"
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                className="
-            inline-flex
-            items-center
-            gap-3
-            rounded-md
-            bg-gradient-to-r
-            from-pink-500/70
-            to-purple-500/40
-            px-4
-            py-4
-            text-md
-            font-semibold
-            text-white
-            shadow-lg
-            shadow-pink-500/20
-            transition-all
-            duration-300
-            hover:scale-105
-            hover:shadow-pink-500/40
-        "
+                                className="inline-flex items-center gap-3 rounded-md bg-gradient-to-r from-pink-500/70 to-purple-500/40 px-4 py-4 text-md font-semibold text-white shadow-lg shadow-pink-500/20 transition-all duration-300 hover:scale-105 hover:shadow-pink-500/40"
                             >
                                 More About Billennium Divas
                             </a>

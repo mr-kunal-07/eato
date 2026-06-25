@@ -53,13 +53,7 @@ export default function AboutBook() {
 
                         {/* Floating Book */}
                         <div
-                            className="
-                                relative
-                                transition-all
-                                duration-700
-                                group-hover:-translate-y-4
-                                group-hover:rotate-1
-                            "
+                            className="relative transition-all duration-700 group-hover:-translate-y-4 group-hover:rotate-1"
                         >
                             <Image
                                 src="/vec-Hero.png"
@@ -67,29 +61,13 @@ export default function AboutBook() {
                                 width={520}
                                 height={700}
                                 priority
-                                className="
-                                    h-auto
-                                    rounded-2xl
-                                    object-contain
-                                    drop-shadow-[0_30px_80px_rgba(0,0,0,0.6)]
-                                "
+                                className="h-auto rounded-2xl object-contain drop-shadow-[0_30px_80px_rgba(0,0,0,0.6)]"
                             />
                         </div>
 
                         {/* Floating Badge */}
                         <div
-                            className="
-                                absolute
-                                -right-6
-                                top-10
-                                rounded-full
-                                border
-                                border-white/10
-                                bg-white/5
-                                px-5
-                                py-3
-                                backdrop-blur-xl
-                            "
+                            className="absolute -right-6 top-10 rounded-full border border-white/10 bg-white/5 px-5 py-3 backdrop-blur-xl"
                         >
                             <p className="text-xs uppercase tracking-[0.2em] text-white/70">
                                 Volume I & II
@@ -100,29 +78,11 @@ export default function AboutBook() {
 
                 {/* Right Side */}
                 <div
-                    className="
-                        rounded-[32px]
-                        border
-                        border-white/10
-                        bg-white/[0.03]
-                        p-8
-                        backdrop-blur-xl
-                        md:p-12
-                    "
+                    className="rounded-[32px] border border-white/10 bg-white/[0.03] p-8 backdrop-blur-xl md:p-12"
                 >
                     {/* Badge */}
                     <div
-                        className="
-                            inline-flex
-                            items-center
-                            gap-2
-                            rounded-full
-                            border
-                            border-white/10
-                            bg-white/5
-                            px-4
-                            py-2
-                        "
+                        className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-4 py-2"
                     >
                         <BookOpen
                             size={14}
@@ -130,12 +90,7 @@ export default function AboutBook() {
                         />
 
                         <span
-                            className="
-                                text-[11px]
-                                uppercase
-                                tracking-[0.25em]
-                                text-white/60
-                            "
+                            className="text-[11px] uppercase tracking-[0.25em] text-white/60"
                         >
                             About The Book
                         </span>
@@ -143,14 +98,7 @@ export default function AboutBook() {
 
                     {/* Heading */}
                     <h2
-                        className="
-                            mt-6
-                            font-serif
-                            text-4xl
-                            leading-tight
-                            text-white
-                            md:text-5xl
-                        "
+                        className="mt-6 font-serif text-4xl leading-tight text-white md:text-5xl"
                     >
                         Stories That
                         <span className="block text-pink-300">
@@ -160,12 +108,7 @@ export default function AboutBook() {
 
                     {/* Description */}
                     <p
-                        className="
-                            mt-8
-                            text-lg
-                            leading-relaxed
-                            text-white/70
-                        "
+                        className="mt-8 text-lg leading-relaxed text-white/70"
                     >
                         This collection celebrates the journeys of
                         extraordinary women entrepreneurs who turned
@@ -174,20 +117,10 @@ export default function AboutBook() {
                     </p>
                     {/* Quote */}
                     <div
-                        className="
-                            mt-8
-                            border-l-2
-                            border-pink-400/50
-                            pl-6
-                        "
+                        className="mt-8 border-l-2 border-pink-400/50 pl-6"
                     >
                         <p
-                            className="
-                                text-lg
-                                italic
-                                leading-relaxed
-                                text-white/80
-                            "
+                            className="text-lg italic leading-relaxed text-white/80"
                         >
                             “Every chapter is a reminder that courage,
                             resilience, and vision can turn dreams into
@@ -203,34 +136,10 @@ export default function AboutBook() {
                             return (
                                 <div
                                     key={index}
-                                    className="
-                                        group
-                                        flex
-                                        items-center
-                                        gap-4
-                                        rounded-2xl
-                                        border
-                                        border-white/10
-                                        bg-white/[0.03]
-                                        p-4
-                                        transition-all
-                                        duration-300
-                                        hover:bg-white/[0.05]
-                                        hover:border-pink-400/20
-                                    "
+                                    className="group flex items-center gap-4 rounded-2xl border border-white/10 bg-white/[0.03] p-4 transition-all duration-300 hover:bg-white/[0.05] hover:border-pink-400/20"
                                 >
                                     <div
-                                        className="
-                                            flex
-                                            h-12
-                                            w-12
-                                            items-center
-                                            justify-center
-                                            rounded-xl
-                                            bg-gradient-to-br
-                                            from-pink-500/20
-                                            to-violet-500/20
-                                        "
+                                        className="flex h-12 w-12 items-center justify-center rounded-xl bg-gradient-to-br from-pink-500/20 to-violet-500/20"
                                     >
                                         <Icon
                                             size={20}
@@ -256,31 +165,13 @@ export default function AboutBook() {
                     <div className="mt-10 flex flex-wrap gap-4">
 
                         <button
-                            className="
-                                group
-                                flex
-                                items-center
-                                gap-2
-                                rounded-full
-                                bg-white
-                                px-8
-                                py-4
-                                font-medium
-                                text-black
-                                transition-all
-                                duration-300
-                                hover:scale-105
-                            "
+                            className="group flex items-center gap-2 rounded-full bg-white px-8 py-4 font-medium text-black transition-all duration-300 hover:scale-105"
                         >
                             Explore The Book
 
                             <ArrowRight
                                 size={18}
-                                className="
-                                    transition-transform
-                                    duration-300
-                                    group-hover:translate-x-1
-                                "
+                                className="transition-transform duration-300 group-hover:translate-x-1"
                             />
                         </button>
                     </div>
@@ -337,60 +228,20 @@ export default function AboutBook() {
                                 href={store.Link}
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                className="
-                            group
-                            relative
-                            overflow-hidden
-                            rounded-3xl
-                            border
-                            border-white/10
-                            bg-white/[0.02]
-                            px-8
-                            py-6
-                            transition-all
-                            duration-500
-                            hover:-translate-y-2
-                            hover:border-pink-400/30
-                            hover:bg-white/[0.05]
-                        "
+                                className="group relative overflow-hidden rounded-3xl border border-white/10 bg-white/[0.02] px-8 py-6 transition-all duration-500 hover:-translate-y-2 hover:border-pink-400/30 hover:bg-white/[0.05]"
                             >
                                 {/* Glow */}
                                 <div
-                                    className="
-                                absolute
-                                inset-0
-                                opacity-0
-                                transition-opacity
-                                duration-500
-                                group-hover:opacity-100
-                                bg-gradient-to-br
-                                from-pink-500/10
-                                to-violet-500/10
-                            "
+                                    className="absolute inset-0 opacity-0 transition-opacity duration-500 group-hover:opacity-100 bg-gradient-to-br from-pink-500/10 to-violet-500/10"
                                 />
 
                                 <div className="relative flex flex-col items-center gap-4">
                                     <div
-                                        className="
-                                    flex
-                                    h-16
-                                    w-16
-                                    items-center
-                                    justify-center
-                                    rounded-2xl
-                                    bg-gradient-to-br
-                                    from-pink-500/15
-                                    to-violet-500/15
-                                "
+                                        className="flex h-16 w-16 items-center justify-center rounded-2xl bg-gradient-to-br from-pink-500/15 to-violet-500/15"
                                     >
                                         <Icon
                                             size={30}
-                                            className="
-                                        text-pink-300
-                                        transition-all
-                                        duration-500
-                                        group-hover:scale-110
-                                    "
+                                            className="text-pink-300 transition-all duration-500 group-hover:scale-110"
                                         />
                                     </div>
 
