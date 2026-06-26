@@ -75,6 +75,10 @@ export default function AuthorsSection() {
                         <span className="block bg-gradient-to-r from-pink-300 via-purple-300 to-pink-300 bg-clip-text text-transparent">
                             Eves Against The Odds
                         </span>
+
+                        <span className="mt-1 block text-base font-medium uppercase tracking-[0.20em] text-[#c89b3c] md:text-lg">
+                            25 Inspiring Women Entrepreneurs Stories
+                        </span>
                     </h2>
 
                     <p className="mx-auto mt-5 max-w-4xl text-xl leading-relaxed text-white/60">

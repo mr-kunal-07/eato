@@ -80,6 +80,9 @@ export default function ContactSection() {
                                 Upcomming Edition Of
                             </span>
                             Eves Against The Odds
+                            <span className="mt-1 block text-base font-medium uppercase tracking-[0.20em] text-[#c89b3c] md:text-sm">
+                                25 Inspiring Women Entrepreneurs Stories
+                            </span>
                         </h2>
 
                         <p className="mt-8 text-lg leading-relaxed text-white/60">

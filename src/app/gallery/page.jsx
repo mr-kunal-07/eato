@@ -20,20 +20,26 @@ const formatAltText = (fileName) =>
         .replace(/\s+/g, " ")
         .trim();
 
-async function getGalleryImages() {
-    const galleryDirectory = path.join(process.cwd(), "public", "gallery");
+const encodePathSegment = (segment) => encodeURIComponent(segment);
+
+async function getImagesFromPublicFolder(folderName, options = {}) {
+    const folderDirectory = path.join(process.cwd(), "public", folderName);
+    const folderPath = folderName
+        .split("/")
+        .map(encodePathSegment)
+        .join("/");
 
     try {
-        const entries = await fs.readdir(galleryDirectory, { withFileTypes: true });
+        const entries = await fs.readdir(folderDirectory, { withFileTypes: true });
 
         return entries
             .filter((entry) => entry.isFile() && imageExtensions.has(path.extname(entry.name).toLowerCase()))
             .sort((a, b) => a.name.localeCompare(b.name, undefined, { numeric: true }))
             .map((entry, index) => ({
-                id: entry.name,
-                src: `/gallery/${encodeURIComponent(entry.name)}`,
+                id: `${folderName}/${entry.name}`,
+                src: `/${folderPath}/${encodeURIComponent(entry.name)}`,
                 alt: formatAltText(entry.name),
-                featured: index % 7 === 0 || index % 11 === 0,
+                featured: options.featured ? index % 7 === 0 || index % 11 === 0 : false,
             }));
     } catch (error) {
         if (error.code === "ENOENT") {
@@ -45,7 +51,10 @@ async function getGalleryImages() {
 }
 
 export default async function GalleryPage() {
-    const images = await getGalleryImages();
+    const [images, carouselImages] = await Promise.all([
+        getImagesFromPublicFolder("gallery", { featured: true }),
+        getImagesFromPublicFolder("gallery-carousel"),
+    ]);
 
-    return <GalleryClient images={images} />;
+    return <GalleryClient images={images} carouselImages={carouselImages} />;
 }

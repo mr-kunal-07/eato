@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
 import {
     FaLinkedin,
@@ -76,9 +77,9 @@ export default function Footer() {
                                 </div>
 
                                 <div className="relative z-10 flex flex-col items-center text-center">
-                                    <div className="flex h-40 w-40 items-center justify-center rounded-[30px] border border-white/10 bg-gradient-to-br from-pink-500/20 to-violet-500/20 backdrop-blur-xl transition-transform duration-500 group-hover:scale-105">
+                                    <div className="flex h-20 w-40 items-center justify-center rounded-[30px] border border-white/10 bg-gradient-to-br from-pink-500/20 to-violet-500/20 backdrop-blur-xl transition-transform duration-500 group-hover:scale-105">
                                         <span className="font-serif text-7xl font-bold text-pink-300">
-                                            BD
+                                            <Image src="/icons/image.png" width={200} height={200} alt="BD Logo" className="rounded-md" />
                                         </span>
                                     </div>
 
@@ -90,7 +91,7 @@ export default function Footer() {
                                         Billennium Divas
                                     </h3>
 
-                                    <p className="mt-5 max-w-md text-base leading-relaxed text-white/65">
+                                    <p className="mt-5 max-w-md text-base text-left leading-relaxed text-white/65">
                                         The driving force behind Eves Against The Odds, amplifying
                                         women entrepreneur stories and creating opportunities for
                                         future changemakers.
@@ -99,7 +100,7 @@ export default function Footer() {
                             </a>
 
                             {/* Divider */}
-                            <div className="hidden xl:block h-full w-px bg-gradient-to-b from-transparent via-[#c89b3c]/30 to-transparent" />
+                            <div className="hidden xl:block h-full w-px bg-linear-to-b from-transparent via-[#c89b3c]/30 to-transparent" />
 
                             {/* Supporters */}
                             <div className="relative">
@@ -107,11 +108,11 @@ export default function Footer() {
                                 {/* Header */}
                                 <div className="flex flex-col items-center text-center">
                                     <div className="inline-flex items-center gap-4">
-                                        <div className="h-px w-12 bg-gradient-to-r from-transparent to-[#c89b3c]" />
+                                        <div className="h-px w-12 bg-linear-to-r from-transparent to-[#c89b3c]" />
                                         <span className="text-sm font-semibold uppercase tracking-[0.35em] text-[#c89b3c]">
                                             Supported By
                                         </span>
-                                        <div className="h-px w-12 bg-gradient-to-l from-transparent to-[#c89b3c]" />
+                                        <div className="h-px w-12 bg-linear-to-l from-transparent to-[#c89b3c]" />
                                     </div>
                                 </div>
 
@@ -132,17 +133,17 @@ export default function Footer() {
                                                     <img
                                                         src={supporter.logo}
                                                         alt={supporter.name}
-                                                        className="max-h-24 w-auto object-contain transition-transform duration-500 group-hover:scale-105"
+                                                        className="max-h-24 w-auto object-contain rounded-md  transition-transform duration-500 group-hover:scale-105"
                                                     />
                                                 </div>
 
-                                                <div className="mt-4 h-px w-12 bg-gradient-to-r from-transparent via-[#c89b3c]/50 to-transparent" />
+                                                <div className="mt-4 h-px w-12 bg-linear-to-r from-transparent via-[#c89b3c]/50 to-transparent" />
 
                                                 <h3 className="mt-5 text-lg font-bold text-white">
                                                     {supporter.name}
                                                 </h3>
 
-                                                <p className="mt-3 text-sm leading-relaxed text-white/60">
+                                                <p className="mt-3 text-sm leading-relaxed text-left text-white/60">
                                                     {supporter.description}
                                                 </p>
                                             </div>
@@ -213,14 +214,7 @@ export default function Footer() {
                                     Authors
                                 </Link>
                             </li>
-                            <li>
-                                <Link
-                                    href=""
-                                    className="hover:text-pink-300"
-                                >
-                                    Billennium Divas
-                                </Link>
-                            </li>
+
                             <li>
                                 <Link
                                     href="/gallery"
@@ -238,6 +232,14 @@ export default function Footer() {
                                     className="hover:text-pink-300"
                                 >
                                     Contact
+                                </Link>
+                            </li>
+                            <li>
+                                <Link
+                                    href=""
+                                    className="hover:text-pink-300"
+                                >
+                                    Billennium Divas
                                 </Link>
                             </li>
                         </ul>

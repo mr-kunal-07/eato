@@ -45,7 +45,7 @@ const items = [
         "id": 6,
         "type": "quote",
         "quote": "Take decisions and then make them right.",
-        "author": "Shre. Ratan Tata"
+        "author": "Shri. Ratan Tata"
     },
 ];
 
@@ -76,7 +76,7 @@ export default function WomenStoriesGrid() {
                     </h2>
 
                     <p className="mt-6 text-white/60 text-lg leading-relaxed">
-                        Meet some of the remarkable women featured in the book and
+                        Meet some of the remarkable women entrepreneur featured in the book and
                         discover the wisdom that shaped their journey.
                     </p>
 

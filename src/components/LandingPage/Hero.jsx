@@ -115,10 +115,15 @@ export default function Hero() {
                         Grab Your Copy
                     </button>
 
-                    <section className="relative py-8 overflow-hidden ">
+                    <section className="relative py-10 overflow-hidden">
+                        {/* Background Glow */}
+                        <div className="absolute inset-0 overflow-hidden pointer-events-none">
+                            <div className="absolute top-1/2 left-1/2 h-[500px] w-[500px] -translate-x-1/2 -translate-y-1/2 rounded-full bg-[#c89b3c]/10 blur-[150px]" />
+                        </div>
 
-                        <div className="max-w-7xl mx-auto px-5 sm:px-6 lg:px-8">
-                            <div className="grid grid-cols-2 lg:grid-cols-4 border border-white/10 rounded-2xl overflow-hidden backdrop-blur-sm">
+                        <div className="relative max-w-7xl mx-auto px-3">
+
+                            <div className="grid grid-cols-2 lg:grid-cols-4 rounded-3xl border border-white/10 bg-white/[0.03] backdrop-blur-2xl overflow-hidden">
 
                                 {stats.map((item, index) => {
                                     const Icon = item.icon;
@@ -126,43 +131,46 @@ export default function Hero() {
                                     return (
                                         <div
                                             key={index}
-                                            className="group relative flex flex-col items-center justify-center text-center px-6 py-10 md:py-14 border-b lg:border-b-0 border-white/10 transition-all duration-500 hover:bg-white/[0.02]"
+                                            className="group relative flex flex-col items-center justify-center py-12 px-6 transition-all duration-500 hover:-translate-y-2 hover:bg-white/[0.04]"
                                         >
-                                            {/* Vertical Borders */}
+                                            {/* Divider */}
                                             {index !== stats.length - 1 && (
-                                                <div className="hidden lg:block absolute top-0 right-0 h-full w-px bg-white/10" />
+                                                <div className="hidden lg:block absolute right-0 top-10 bottom-10 w-px bg-gradient-to-b from-transparent via-white/15 to-transparent" />
                                             )}
 
-                                            {/* Icon Glow */}
-                                            <div
-                                                className="relative mb-5 transition-all duration-500 group-hover:scale-110"
-                                            >
-                                                <div className="absolute inset-0 bg-white/10 blur-xl rounded-full" />
+                                            {/* Top Accent */}
+                                            <div className="absolute top-0 left-0 h-1 w-0 bg-[#c89b3c] transition-all duration-500 group-hover:w-full" />
 
-                                                <div
-                                                    className="relative w-12 h-12 flex items-center justify-center rounded-full border border-white/10 bg-white/[0.03]"
-                                                >
+                                            {/* Glow */}
+                                            <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                                                <div className="absolute inset-0 bg-gradient-to-b from-[#c89b3c]/5 via-transparent to-transparent" />
+                                            </div>
+
+                                            {/* Icon */}
+                                            <div className="relative mb-6">
+                                                <div className="absolute inset-0 rounded-full bg-[#c89b3c]/25 blur-2xl opacity-0 group-hover:opacity-100 transition duration-500" />
+
+                                                <div className="relative flex h-16 w-16 items-center justify-center rounded-2xl border border-[#c89b3c]/20 bg-white/[0.04] transition-all duration-500 group-hover:border-[#c89b3c]/60 group-hover:rotate-6">
                                                     <Icon
-                                                        size={22}
-                                                        className="text-white/70"
-                                                        strokeWidth={1.5}
+                                                        size={28}
+                                                        strokeWidth={1.8}
+                                                        className="text-[#c89b3c] transition-transform duration-500 group-hover:scale-110"
                                                     />
                                                 </div>
                                             </div>
 
                                             {/* Number */}
-                                            <h3
-                                                className="text-white text-3xl sm:text-4xl md:text-5xl font-serif font-bold leading-none tracking-tight transition-transform duration-500 group-hover:scale-105"
-                                            >
+                                            <h3 className="text-4xl md:text-5xl font-serif font-bold bg-gradient-to-b from-white to-white/70 bg-clip-text text-transparent tracking-tight">
                                                 {item.value}
                                             </h3>
 
                                             {/* Label */}
-                                            <p
-                                                className="mt-3 text-[10px] sm:text-xs tracking-[0.25em] uppercase text-white/50 leading-relaxed"
-                                            >
+                                            <p className="mt-4 text-[11px] uppercase tracking-[0.35em] text-white/60 text-center leading-relaxed">
                                                 {item.label}
                                             </p>
+
+                                            {/* Bottom Accent */}
+                                            <div className="mt-6 h-px w-12 bg-[#c89b3c]/40 transition-all duration-500 group-hover:w-24 group-hover:bg-[#c89b3c]" />
                                         </div>
                                     );
                                 })}

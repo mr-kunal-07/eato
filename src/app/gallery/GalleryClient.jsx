@@ -2,22 +2,42 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { useCallback, useEffect, useState } from "react";
+import { useCallback, useEffect, useMemo, useState } from "react";
 import { ArrowLeft, ChevronLeft, ChevronRight, X } from "lucide-react";
 
-export default function GalleryClient({ images }) {
+export default function GalleryClient({ images, carouselImages = [] }) {
     const [activeIndex, setActiveIndex] = useState(null);
-    const activeImage = activeIndex === null ? null : images[activeIndex];
+    const sliderImages = carouselImages.length > 0 ? carouselImages : images;
+    const lightboxImages = useMemo(() => {
+        const imageMap = new Map();
+
+        [...sliderImages, ...images].forEach((image) => {
+            imageMap.set(image.id, image);
+        });
+
+        return Array.from(imageMap.values());
+    }, [images, sliderImages]);
+    const activeImage = activeIndex === null ? null : lightboxImages[activeIndex];
+    const renderedCarouselImages = useMemo(() => {
+        if (sliderImages.length === 0) return [];
+
+        return [...sliderImages, ...sliderImages];
+    }, [sliderImages]);
 
     const closeLightbox = () => setActiveIndex(null);
     const showPrevious = useCallback(() =>
         setActiveIndex((current) =>
-            current === null ? current : (current - 1 + images.length) % images.length
-        ), [images.length]);
+            current === null ? current : (current - 1 + lightboxImages.length) % lightboxImages.length
+        ), [lightboxImages.length]);
     const showNext = useCallback(() =>
         setActiveIndex((current) =>
-            current === null ? current : (current + 1) % images.length
-        ), [images.length]);
+            current === null ? current : (current + 1) % lightboxImages.length
+        ), [lightboxImages.length]);
+
+    const openImage = (selectedImage) => {
+        const imageIndex = lightboxImages.findIndex((image) => image.id === selectedImage.id);
+        if (imageIndex >= 0) setActiveIndex(imageIndex);
+    };
 
     useEffect(() => {
         if (activeIndex === null) return;
@@ -39,6 +59,16 @@ export default function GalleryClient({ images }) {
 
     return (
         <main className="min-h-screen bg-[#08070d] text-white">
+            <style>{`
+                @keyframes galleryCarouselScroll {
+                    from {
+                        transform: translateX(0);
+                    }
+                    to {
+                        transform: translateX(-50%);
+                    }
+                }
+            `}</style>
             <section className="relative overflow-hidden px-4 py-20 sm:px-6 lg:px-8">
                 <div className="absolute inset-0">
                     <div className="absolute left-0 top-0 h-100 w-100 rounded-full bg-pink-500/10 blur-[150px]" />
@@ -63,30 +93,79 @@ export default function GalleryClient({ images }) {
 
                     </div>
 
-                    {images.length > 0 ? (
-                        <div className="mt-12 grid auto-rows-[150px] grid-cols-2 gap-2 sm:auto-rows-[180px] md:grid-cols-4 lg:grid-cols-6">
-                            {images.map((image, index) => (
-                                <button
-                                    key={image.id}
-                                    type="button"
-                                    onClick={() => setActiveIndex(index)}
-                                    className={`group relative overflow-hidden rounded-lg border border-white/10 bg-white/5 text-left outline-none transition-all duration-300 hover:z-10 hover:scale-[1.02] hover:border-pink-300/50 focus-visible:border-pink-300 ${image.featured ? "col-span-2 row-span-2" : ""}`}
-                                >
-                                    <Image
-                                        src={image.src}
-                                        alt={image.alt}
-                                        fill
-                                        sizes={image.featured ? "(min-width: 1024px) 33vw, (min-width: 768px) 50vw, 100vw" : "(min-width: 1024px) 17vw, (min-width: 768px) 25vw, 50vw"}
-                                        className="object-cover transition-transform duration-500 group-hover:scale-105"
-                                    />
-                                    <div className="absolute inset-x-0 bottom-0 bg-linear-to-t from-black/70 to-transparent p-3 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
-                                        <p className="truncate text-xs font-medium text-white">
-                                            {image.alt}
-                                        </p>
+                    {lightboxImages.length > 0 ? (
+                        <>
+                            <div className="mt-12">
+                                <div className="mb-5 flex items-center justify-between gap-4">
+                                    <h2 className="font-serif text-2xl text-white md:text-3xl">
+                                        Important Moments
+                                    </h2>
+                                </div>
+
+                                <div className="overflow-hidden rounded-lg border border-white/10 bg-white/[0.03] p-2">
+                                    <div
+                                        className="flex w-max items-center gap-3"
+                                        style={{
+                                            animation: sliderImages.length > 1 ? "galleryCarouselScroll 38s linear infinite" : "none",
+                                        }}
+                                    >
+                                        {renderedCarouselImages.map((image, index) => (
+                                            <div
+                                                key={`${image.id}-${index}`}
+                                                className="shrink-0"
+                                            >
+                                                <button
+                                                    type="button"
+                                                    onClick={() => openImage(image)}
+                                                    className="group relative block overflow-hidden rounded-lg border border-white/10 bg-black/30 text-left outline-none transition-all duration-300 hover:border-pink-300/50 focus-visible:border-pink-300"
+                                                >
+                                                    <img
+                                                        src={image.src}
+                                                        alt={image.alt}
+                                                        className="block h-[240px] w-auto transition-transform duration-500 group-hover:scale-[1.02] sm:h-[300px] lg:h-[340px]"
+                                                    />
+                                                    <div className="absolute inset-x-0 bottom-0 bg-linear-to-t from-black/75 to-transparent p-3 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
+                                                        <p className="truncate text-xs font-medium text-white">
+                                                            {image.alt}
+                                                        </p>
+                                                    </div>
+                                                </button>
+                                            </div>
+                                        ))}
                                     </div>
-                                </button>
-                            ))}
-                        </div>
+                                </div>
+                            </div>
+
+                            <div className="mt-14">
+                                <h2 className="font-serif text-2xl text-white md:text-3xl">
+                                    All Images
+                                </h2>
+
+                                <div className="mt-5 grid auto-rows-[150px] grid-cols-2 gap-2 sm:auto-rows-[180px] md:grid-cols-4 lg:grid-cols-6">
+                                    {images.map((image, index) => (
+                                        <button
+                                            key={image.id}
+                                            type="button"
+                                            onClick={() => openImage(image)}
+                                            className={`group relative overflow-hidden rounded-lg border border-white/10 bg-white/5 text-left outline-none transition-all duration-300 hover:z-10 hover:scale-[1.02] hover:border-pink-300/50 focus-visible:border-pink-300 ${image.featured ? "col-span-2 row-span-2" : ""}`}
+                                        >
+                                            <Image
+                                                src={image.src}
+                                                alt={image.alt}
+                                                fill
+                                                sizes={image.featured ? "(min-width: 1024px) 33vw, (min-width: 768px) 50vw, 100vw" : "(min-width: 1024px) 17vw, (min-width: 768px) 25vw, 50vw"}
+                                                className="object-cover transition-transform duration-500 group-hover:scale-105"
+                                            />
+                                            <div className="absolute inset-x-0 bottom-0 bg-linear-to-t from-black/70 to-transparent p-3 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
+                                                <p className="truncate text-xs font-medium text-white">
+                                                    {image.alt}
+                                                </p>
+                                            </div>
+                                        </button>
+                                    ))}
+                                </div>
+                            </div>
+                        </>
                     ) : (
                         <div className="mt-12 rounded-3xl border border-white/10 bg-white/5 p-10 text-center">
                             <p className="text-lg font-medium text-white">
@@ -153,7 +232,7 @@ export default function GalleryClient({ images }) {
                     </button>
 
                     <div className="absolute bottom-4 left-1/2 max-w-[calc(100%-2rem)] -translate-x-1/2 rounded-full border border-white/15 bg-white/10 px-5 py-2 text-center text-sm text-white/80 backdrop-blur">
-                        {activeImage.alt} - {activeIndex + 1} / {images.length}
+                        {activeImage.alt} - {activeIndex + 1} / {lightboxImages.length}
                     </div>
                 </div>
             )}

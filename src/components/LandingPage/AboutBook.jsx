@@ -7,6 +7,7 @@ import {
     Star,
     ArrowRight,
 } from "lucide-react";
+import Link from "next/link";
 
 const highlights = [
     {
@@ -197,16 +198,18 @@ export default function AboutBook() {
                     {/* CTA Buttons */}
                     <div className="mt-10 flex flex-wrap gap-4">
 
-                        <button
-                            className="group flex items-center gap-2 rounded-full bg-white px-8 py-4 font-medium text-black transition-all duration-300 hover:scale-105"
-                        >
-                            Explore The Book
+                        <Link href="/volumei">
+                            <button
+                                className="group flex items-center gap-2 rounded-full bg-white px-8 py-4 font-medium text-black transition-all duration-300 hover:scale-105"
+                            >
+                                Explore The Book
 
-                            <ArrowRight
-                                size={18}
-                                className="transition-transform duration-300 group-hover:translate-x-1"
-                            />
-                        </button>
+                                <ArrowRight
+                                    size={18}
+                                    className="transition-transform duration-300 group-hover:translate-x-1"
+                                />
+                            </button>
+                        </Link>
                     </div>
                 </div>
 
