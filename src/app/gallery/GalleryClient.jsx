@@ -91,6 +91,7 @@ export default function GalleryClient({ images, carouselImages = [] }) {
                             </h1>
                         </div>
 
+
                     </div>
 
                     {lightboxImages.length > 0 ? (
@@ -178,6 +179,7 @@ export default function GalleryClient({ images, carouselImages = [] }) {
                     )}
                 </div>
             </section>
+
 
             {activeImage && (
                 <div

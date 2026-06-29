@@ -44,10 +44,10 @@
   {
     "id": 7,
     "type": "woman",
-    "name": "Ms. Shabia Walia",
-    "role": "Founder, Hyacinth Sustainable Solutions Pvt. Ltd",
-    "image": "/Vol1 Images/Shabia Walia.jpeg",
-    "story": "I am the writer of my life film and I choose to be the hero rather than the victim. Life is too short to live by someone else’s expectations of you."
+    "name": "Ms. Nabomita Mazumdar",
+    "role": "Founder, Nabomita.com, President of India Awardee.",
+    "image": "/Vol1 Images/Nabomita Mazumdar.jpeg",
+    "story": "The humility to fail takes the fear out of it."
   },
   {
     "id": 8,
@@ -72,10 +72,10 @@
   {
     "id": 11,
     "type": "woman",
-    "name": "Ms. Nabomita Mazumdar",
-    "role": "Founder, Nabomita.com, President of India Awardee.",
-    "image": "/Vol1 Images/Nabomita Mazumdar.jpeg",
-    "story": "The humility to fail takes the fear out of it."
+    "name": "Ms. Shabia Walia",
+    "role": "Founder, Hyacinth Sustainable Solutions Pvt. Ltd",
+    "image": "/Vol1 Images/Shabia Walia.jpeg",
+    "story": "I am the writer of my life film and I choose to be the hero rather than the victim. Life is too short to live by someone else’s expectations of you."
   },
   {
     "id": 12,
@@ -101,10 +101,10 @@
   {
     "id": 15,
     "type": "woman",
-    "name": "Ms. Reema Sanghavi",
-    "role": "Managing Director, Maximus Mice and Media Solutions Pvt Ltd",
-    "image": "/Vol1 Images/Reema Sanghavi.jpeg",
-    "story": "Live to Inspire."
+    "name": "Ms. Jaya Vaidhyanathan",
+    "role": "CEO, BCT Digital",
+    "image": "/Vol1 Images/Jaya Vaidhyanathan.jpeg",
+    "story": "If you never failed, it means you did not set the bar high enough. Dream big enough so that you fail, and have the courage to aim higher next time."
   },
   {
     "id": 16,
@@ -115,10 +115,10 @@
   {
     "id": 17,
     "type": "woman",
-    "name": "Ms. Jaya Vaidhyanathan",
-    "role": "CEO, BCT Digital",
-    "image": "/Vol1 Images/Jaya Vaidhyanathan.jpeg",
-    "story": "If you never failed, it means you did not set the bar high enough. Dream big enough so that you fail, and have the courage to aim higher next time."
+    "name": "Ms. Reema Sanghavi",
+    "role": "Managing Director, Maximus Mice and Media Solutions Pvt Ltd",
+    "image": "/Vol1 Images/Reema Sanghavi.jpeg",
+    "story": "Live to Inspire."
   },
   {
     "id": 18,
@@ -143,10 +143,10 @@
   {
     "id": 21,
     "type": "woman",
-    "name": "Ms. Namrata Tatiya",
-    "role": "Founder, Acculegal Services Pvt Ltd.",
-    "image": "/Vol1 Images/Namrata Tatiya.jpeg",
-    "story": "The only thing that can help you win over all the evils is YOU. So make yourself the most valuable one as you have the power to achieve anything and everything. Just don’t stop."
+    "name": "Ms. Neha Kanabar",
+    "role": "Founder, Community Entrepreneur UNIMO Universe of Moms",
+    "image": "/Vol1 Images/Neha Kanabar.jpeg",
+    "story": "If beautiful things happen inside you, beautiful things will happen outside you."
   },
   {
     "id": 22,
@@ -157,10 +157,10 @@
   {
     "id": 23,
     "type": "woman",
-    "name": "Ms. Neha Kanabar",
-    "role": "Founder, Community Entrepreneur UNIMO Universe of Moms",
-    "image": "/Vol1 Images/Neha Kanabar.jpeg",
-    "story": "If beautiful things happen inside you, beautiful things will happen outside you."
+    "name": "Ms. Shikha Pandey",
+    "role": "Entrepreneur, BECK Technology Ventures Pvt. Ltd",
+    "image": "/Vol1 Images/Shikha Pandey.jpeg",
+    "story": "Don't be limited. Be a LIMITED Edition."
   },
   {
     "id": 24,
@@ -185,10 +185,10 @@
   {
     "id": 27,
     "type": "woman",
-    "name": "Ms. Shikha Pandey",
-    "role": "Entrepreneur, BECK Technology Ventures Pvt. Ltd",
-    "image": "/Vol1 Images/Shikha Pandey.jpeg",
-    "story": "Don't be limited. Be a LIMITED Edition."
+    "name": "Ms. Namrata Tatiya",
+    "role": "Founder, Acculegal Services Pvt Ltd.",
+    "image": "/Vol1 Images/Namrata Tatiya.jpeg",
+    "story": "The only thing that can help you win over all the evils is YOU. So make yourself the most valuable one as you have the power to achieve anything and everything. Just don’t stop."
   },
   {
     "id": 28,
@@ -213,10 +213,10 @@
   {
     "id": 31,
     "type": "woman",
-    "name": "Dr. Sandhya Mayenkar",
-    "role": "Founder, Skm Institute of Culinary Arts, Kini Supermarket, Skm Enterprises, Skm Asha Foundation",
-    "image": "/Vol1 Images/Sandhya Mayenkar.jpeg",
-    "story": " My story is very simple and I take pride in my work. The recognition I get is a morale booster for me as well as other small town women like me, who want to stand up on their own feet, rise out of their homes to build a better life."
+    "name": "Ms. Namita Shah",
+    "role": "Co-Founder, Presolv360",
+    "image": "/Vol1 Images/Namita Shah.jpeg",
+    "story": "If you don't fail enough, you aren't aiming high enough."
   },
   {
     "id": 32,
@@ -227,10 +227,10 @@
   {
     "id": 33,
     "type": "woman",
-    "name": "Ms. Namita Shah",
-    "role": "Co-Founder, Presolv360",
-    "image": "/Vol1 Images/Namita Shah.jpeg",
-    "story": "If you don't fail enough, you aren't aiming high enough."
+    "name": "Ms. Neety Gupta",
+    "role": "Proprietor,Neety Buildcon / Healing vibes by Neety.",
+    "image": "/Vol1 Images/Neety Gupta.jpeg",
+    "story": "Count your blessings, pray each day. Surrender to God’s will, he is the best judge."
   },
   {
     "id": 34,
@@ -241,10 +241,10 @@
   {
     "id": 35,
     "type": "woman",
-    "name": "Ms. Neety Gupta",
-    "role": "Proprietor,Neety Buildcon / Healing vibes by Neety.",
-    "image": "/Vol1 Images/Neety Gupta.jpeg",
-    "story": "Count your blessings, pray each day. Surrender to God’s will, he is the best judge."
+    "name": "Dr. Sandhya Mayenkar",
+    "role": "Founder, Skm Institute of Culinary Arts, Kini Supermarket, Skm Enterprises, Skm Asha Foundation",
+    "image": "/Vol1 Images/Sandhya Mayenkar.jpeg",
+    "story": " My story is very simple and I take pride in my work. The recognition I get is a morale booster for me as well as other small town women like me, who want to stand up on their own feet, rise out of their homes to build a better life."
   },
   {
     "id": 36,
@@ -317,24 +317,12 @@
     "story": "Exposure Leads To Exploration and Exploration to Innovation."
   },
   {
-    "id": 46,
-    "type": "quote",
-    "quote": "If you want to create change, start by solving one real problem at a time.",
-    "author": "Aditi Gupta"
-  },
-  {
     "id": 47,
     "type": "woman",
     "name": "Ms. Roli Pandey",
     "role": "Founder, Zucate Mind Solutions Pvt Ltd",
     "image": "/Vol1 Images/Roli Pandey.jpeg",
     "story": "The key to your true potential is within you, and you realize it when your status quo is challenged; entrepreneurship does exactly that."
-  },
-  {
-    "id": 48,
-    "type": "quote",
-    "quote": "Don't wait for opportunities. Create them, own them, and make them count.",
-    "author": "Apurva Purohit"
   },
   {
     "id": 49,
