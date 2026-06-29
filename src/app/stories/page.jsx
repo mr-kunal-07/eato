@@ -1,11 +1,12 @@
 "use client";
 
+import { Suspense } from "react";
 import { useEffect, useState } from "react";
 import { useRouter, useSearchParams } from "next/navigation";
 import Image from "next/image";
 import { Quote, ArrowLeft } from "lucide-react";
 
-export default function WomenStoriesPage() {
+function WomenStoriesContent() {
     const router = useRouter();
     const searchParams = useSearchParams();
     const [activeVolume, setActiveVolume] = useState("vol1");
@@ -230,5 +231,36 @@ export default function WomenStoriesPage() {
                 )}
             </div>
         </section>
+    );
+}
+
+// Loading fallback component
+function StoriesLoadingFallback() {
+    return (
+        <section className="relative overflow-hidden bg-gradient-to-b from-[#120f20] via-[#170f24] to-[#251224] py-24">
+            <div className="absolute inset-0">
+                <div className="absolute left-0 top-0 h-112.5 w-112.5 rounded-full bg-pink-500/10 blur-[140px]" />
+                <div className="absolute right-0 bottom-0 h-112.5 w-112.5 rounded-full bg-violet-500/10 blur-[140px]" />
+            </div>
+            <div className="relative z-10 mx-auto max-w-7xl px-6">
+                <div className="flex justify-center items-center min-h-screen">
+                    <div className="text-center">
+                        <div className="inline-block">
+                            <div className="w-12 h-12 border-4 border-white/20 border-t-pink-500 rounded-full animate-spin" />
+                        </div>
+                        <p className="mt-4 text-white/60">Loading stories...</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    );
+}
+
+// Main export with Suspense wrapper
+export default function WomenStoriesPage() {
+    return (
+        <Suspense fallback={<StoriesLoadingFallback />}>
+            <WomenStoriesContent />
+        </Suspense>
     );
 }
