@@ -142,23 +142,24 @@ export default function GalleryClient({ images, carouselImages = [] }) {
                                     All Images
                                 </h2>
 
-                                <div className="mt-5 grid auto-rows-[150px] grid-cols-2 gap-2 sm:auto-rows-[180px] md:grid-cols-4 lg:grid-cols-6">
-                                    {images.map((image, index) => (
+                                <div className="mt-5 grid grid-cols-2 gap-3 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5">
+                                    {images.map((image) => (
                                         <button
                                             key={image.id}
                                             type="button"
                                             onClick={() => openImage(image)}
-                                            className={`group relative overflow-hidden rounded-lg border border-white/10 bg-white/5 text-left outline-none transition-all duration-300 hover:z-10 hover:scale-[1.02] hover:border-pink-300/50 focus-visible:border-pink-300 ${image.featured ? "col-span-2 row-span-2" : ""}`}
+                                            className="group relative aspect-square overflow-hidden rounded-lg border border-white/10 bg-white/5 transition-all duration-300 hover:scale-105 hover:border-pink-300/50"
                                         >
                                             <Image
                                                 src={image.src}
                                                 alt={image.alt}
                                                 fill
-                                                sizes={image.featured ? "(min-width: 1024px) 33vw, (min-width: 768px) 50vw, 100vw" : "(min-width: 1024px) 17vw, (min-width: 768px) 25vw, 50vw"}
-                                                className="object-cover transition-transform duration-500 group-hover:scale-105"
+                                                sizes="(min-width:1024px) 20vw, (min-width:768px) 25vw, 50vw"
+                                                className="object-cover transition-transform duration-500 group-hover:scale-110"
                                             />
-                                            <div className="absolute inset-x-0 bottom-0 bg-linear-to-t from-black/70 to-transparent p-3 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
-                                                <p className="truncate text-xs font-medium text-white">
+
+                                            <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/70 to-transparent p-2 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
+                                                <p className="truncate text-xs text-white">
                                                     {image.alt}
                                                 </p>
                                             </div>
